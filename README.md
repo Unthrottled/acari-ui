@@ -1,44 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Built with pwa–starter–kit](https://img.shields.io/badge/built_with-pwa–starter–kit_-blue.svg)](https://github.com/Polymer/pwa-starter-kit "Built with pwa–starter–kit")
+[![Build status](https://api.travis-ci.org/Polymer/pwa-starter-kit.svg?branch=master)](https://travis-ci.org/Polymer/pwa-starter-kit)
 
-## Available Scripts
+> ## 🛠 Status: In Development
+> PWA Starter Kit is currently in development. It's on the fast track to a 1.0 release, so we encourage you to use it and give us your feedback, but there are things that haven't been finalized yet and you can expect some changes.
+>
+> See the list of Known Issues and TODOs, below, for updates.
 
-In the project directory, you can run:
+# PWA Starter Kit
 
-### `npm start`
+This sample app is a starting point for building PWAs. Out of the box, the template
+gives you the following features:
+- all the PWA goodness (manifest, service worker)
+- a responsive layout
+- application theming
+- example of using Redux for state management
+- offline UI
+- simple routing solution
+- fast time-to-interactive and first-paint through the PRPL pattern
+- easy deployment to prpl-server or static hosting
+- unit and integrating testing starting points
+- documentation about other advanced patterns.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📖 Head over to the [documentation site](https://pwa-starter-kit.polymer-project.org/) for more details or check out [how to get started](https://pwa-starter-kit.polymer-project.org/setup/)!
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![pwa-starter-kit screenshot](https://user-images.githubusercontent.com/1369170/39715580-a1be5126-51e2-11e8-8440-96b07be03a3c.png)
 
-### `npm test`
+## TODOs
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [x] Setup Safari testing on Travis.
+- [x] Deploy all templates as demos.
+- [ ] Update to latest [Material Web Components](https://github.com/material-components/material-components-web-components).
