@@ -14,8 +14,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
-import Project from './Project';
-import post1 from './blog-post.1.md';
+import Project from '../Project';
+import post1 from '../blog-post.1.md';
 
 const styles = theme => ({
   layout: {
@@ -124,7 +124,7 @@ const archives = [
 
 const social = ['GitHub', 'Twitter', 'Facebook'];
 
-function Thing(props) {
+function Landing(props) {
   const { classes } = props;
 
   return (
@@ -264,8 +264,8 @@ function Thing(props) {
   );
 }
 
-Thing.propTypes = {
+Landing.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Thing);
+export default withStyles(styles)(Landing);
