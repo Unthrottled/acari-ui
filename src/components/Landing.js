@@ -18,8 +18,12 @@ import Project from '../Project';
 import post1 from '../blog-post.1.md';
 
 const styles = theme => ({
+  backdrop:{
+    backgroundColor: 'ghostwhite',
+  },
   layout: {
     width: 'auto',
+    backgroundColor: 'white',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
@@ -130,6 +134,7 @@ function Landing(props) {
   return (
     <React.Fragment>
       <CssBaseline />
+      <div className={classes.backdrop}>
       <div className={classes.layout}>
         <Toolbar className={classes.toolbarMain}>
           <Button size="small">Subscribe</Button>
@@ -260,6 +265,7 @@ function Landing(props) {
         </Typography>
       </footer>
       {/* End footer */}
+      </div>
     </React.Fragment>
   );
 }
