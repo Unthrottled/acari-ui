@@ -12,6 +12,11 @@
   height: 40vmin;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

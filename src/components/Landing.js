@@ -17,6 +17,7 @@ import Divider from '@material-ui/core/Divider';
 import Project from '../Project';
 import Strype from '../images/stripe.png';
 import post1 from '../blog-post.1.md';
+import Reach from '../images/reach.png'
 
 const styles = theme => ({
   layout: {
@@ -29,6 +30,10 @@ const styles = theme => ({
       marginLeft: 'auto',
       marginRight: 'auto',
     },
+  },
+  reach: {
+    verticalAlign: 'middle',
+    maxWidth: '100%',
   },
   toolbarMain: {
     borderBottom: `1px solid ${theme.palette.grey[300]}`,
@@ -261,6 +266,9 @@ function Landing(props) {
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Something here to give the footer a purpose!
         </Typography>
+        <div style={{textAlign: 'center'}}>
+          <img src={Reach} className={classes.reach}></img>
+        </div>
       </footer>
       {/* End footer */}
       </div>
