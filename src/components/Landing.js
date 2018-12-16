@@ -15,15 +15,13 @@ import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Project from '../Project';
+import Strype from '../images/stripe.png';
 import post1 from '../blog-post.1.md';
 
 const styles = theme => ({
-  backdrop:{
-    backgroundColor: 'ghostwhite',
-  },
   layout: {
     width: 'auto',
-    backgroundColor: 'white',
+    backgroundColor: 'rgba(255,255,255,0.25)',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
@@ -75,7 +73,7 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3,
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'rgba(255,255,255,0.25)',
     marginTop: theme.spacing.unit * 8,
     padding: `${theme.spacing.unit * 6}px 0`,
   },
@@ -134,7 +132,7 @@ function Landing(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <div className={classes.backdrop}>
+      <div className={"backdrop"}>
       <div className={classes.layout}>
         <Toolbar className={classes.toolbarMain}>
           <Button size="small">Subscribe</Button>
