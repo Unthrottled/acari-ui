@@ -4,7 +4,7 @@
 }
 
 .backdrop {
-  background: url('images/stripe.png') fixed, linear-gradient(#3e3e3e,#3e3e3e,rgba(101, 16, 16, 0.83));
+  background: url('images/stripe.png') fixed, linear-gradient(#A0A0A0,#A0A0A0,rgba(101, 16, 16, 0.83));
 }
 
 .App-logo {

@@ -81,6 +81,11 @@ const styles = theme => ({
     backgroundColor: 'rgba(255,255,255,0.25)',
     marginTop: theme.spacing.unit * 8,
     padding: `${theme.spacing.unit * 6}px 0`,
+    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
   },
 });
 
@@ -266,10 +271,10 @@ function Landing(props) {
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Something here to give the footer a purpose!
         </Typography>
+      </footer>
         <div style={{textAlign: 'center'}}>
           <img src={Reach} className={classes.reach}></img>
         </div>
-      </footer>
       {/* End footer */}
       </div>
     </React.Fragment>
