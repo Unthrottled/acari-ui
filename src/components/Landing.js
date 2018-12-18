@@ -136,7 +136,6 @@ function Landing(props) {
       <div className={"backdrop"}>
         <div className={classes.layout}>
           <Toolbar className={classes.toolbarMain}>
-            <Button size="small">Subscribe</Button>
             <Typography
               component="h2"
               variant="h5"
@@ -145,7 +144,7 @@ function Landing(props) {
               noWrap
               className={classes.toolbarTitle}
             >
-              Thing
+              Acari Cyberspace
             </Typography>
             <IconButton>
               <SearchIcon/>
@@ -164,21 +163,20 @@ function Landing(props) {
           <main>
             {/* Main featured post */}
             <Paper className={classes.mainFeaturedPost}>
-              <div className={"acari-heading"}>
-                <Grid container>
-                  <Grid item md={6}>
-                    <div className={classes.mainFeaturedPostContent}>
-                      <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                        Title of a longer featured blog post
-                      </Typography>
-                      <Typography variant="h5" color="inherit" paragraph>
-                        Multiple lines of text that form the lede, informing new readers quickly and
-                        efficiently about what&apos;s most interesting in this post&apos;s contents…
-                      </Typography>
-                    </div>
-                  </Grid>
+              <Grid container>
+                <Grid item md={6}>
+                  <div className={classes.mainFeaturedPostContent}>
+                    <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                      Dedicate to being great.
+                    </Typography>
+                    <Typography variant="h5" color="inherit" paragraph>
+                      Here is a rich collection of various projects that capture the principals that dedication to
+                      <span style={{fontStyle: 'italic'}}> my</span> passion.
+                      Which is the never ending quest of continuous improvement.
+                    </Typography>
+                  </div>
                 </Grid>
-              </div>
+              </Grid>
             </Paper>
             {/* End main featured post */}
             {/* Sub featured posts */}
@@ -235,7 +233,7 @@ function Landing(props) {
             </Grid>
           </main>
         </div>
-      <Footer></Footer>
+        <Footer></Footer>
       </div>
     </React.Fragment>
   );

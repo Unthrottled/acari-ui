@@ -23,17 +23,17 @@ const Footer = props => {
 
   return <React.Fragment>
     <footer className={classes.footer}>
-      <div onClick={()=>window.open("https://github.com/cyclic-reference/acari-ui", '_blank')}>
-        <Button variant={"contained"} size="small" style={{marginLeft: '0.5em'}}>
-          Source Code
-        </Button>
-      </div>
       <Typography variant="h6" align="center" gutterBottom>
         Footer
       </Typography>
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         I apologise for nothing.
       </Typography>
+      <div onClick={()=>window.open("https://github.com/cyclic-reference/acari-ui", '_blank')}>
+        <Button variant={"contained"} size="small" style={{marginLeft: '1em'}}>
+          Source Code
+        </Button>
+      </div>
     </footer>
     <div style={{textAlign: 'center'}}>
       <img src={Reach} className={classes.reach}></img>
