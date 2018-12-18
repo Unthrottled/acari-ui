@@ -40,6 +40,12 @@ const styles = theme => ({
     borderBottom: `1px solid ${theme.palette.grey[300]}`,
   },
   toolbarTitle: {
+    fontFamily: 'proto',
+    color: 'ghostwhite',
+    textShadow: '-1px -1px 0 rgba(101, 16, 16, 0.95), ' +
+      '  1px -1px 0 rgba(101, 16, 16, 0.95), ' +
+      '-1px 1px 0 rgba(101, 16, 16, 0.95), ' +
+      '1px 1px 0 rgba(101, 16, 16, 0.83)',
     flex: 1,
   },
   toolbarSecondary: {

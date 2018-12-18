@@ -13,3 +13,8 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
+@font-face {
+  font-family: 'proto';
+  src: url('./fonts/Protos.otf');
+}
