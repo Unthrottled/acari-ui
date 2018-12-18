@@ -18,6 +18,7 @@ import Project from '../Project';
 import Strype from '../images/stripe.png';
 import post1 from '../blog-post.1.md';
 import Reach from '../images/reach.png'
+import Footer from "./Footer";
 
 const styles = theme => ({
   layout: {
@@ -76,16 +77,6 @@ const styles = theme => ({
   },
   sidebarSection: {
     marginTop: theme.spacing.unit * 3,
-  },
-  footer: {
-    backgroundColor: 'rgba(255,255,255,0.25)',
-    marginTop: theme.spacing.unit * 8,
-    padding: `${theme.spacing.unit * 6}px 0`,
-    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-      width: 1100,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    },
   },
 });
 
@@ -244,19 +235,7 @@ function Landing(props) {
             </Grid>
           </main>
         </div>
-        {/* Footer */}
-        <footer className={classes.footer}>
-          <Typography variant="h6" align="center" gutterBottom>
-            Footer
-          </Typography>
-          <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-            Something here to give the footer a purpose!
-          </Typography>
-        </footer>
-        <div style={{textAlign: 'center'}}>
-          <img src={Reach} className={classes.reach}></img>
-        </div>
-        {/* End footer */}
+      <Footer></Footer>
       </div>
     </React.Fragment>
   );
