@@ -226,15 +226,6 @@ function Landing(props) {
             <Grid container spacing={40} className={classes.mainGrid}>
               {/* Main content */}
               <Grid item xs={12} md={8}>
-                <Typography variant="h6" gutterBottom>
-                  From the Firehose
-                </Typography>
-                <Divider/>
-                {posts.map(post => (
-                  <Project className={classes.markdown} key={post.substring(0, 40)}>
-                    {post}
-                  </Project>
-                ))}
               </Grid>
               {/* End main content */}
               {/* Sidebar */}
@@ -248,18 +239,6 @@ function Landing(props) {
                     amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
                   </Typography>
                 </Paper>
-                <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
-                  Archives
-                </Typography>
-                {archives.map(archive => (
-                  <Typography key={archive}>{archive}</Typography>
-                ))}
-                <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
-                  Social
-                </Typography>
-                {social.map(network => (
-                  <Typography key={network}>{network}</Typography>
-                ))}
               </Grid>
               {/* End sidebar */}
             </Grid>
