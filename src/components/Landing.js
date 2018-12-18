@@ -163,20 +163,22 @@ function Landing(props) {
           <main>
             {/* Main featured post */}
             <Paper className={classes.mainFeaturedPost}>
-              <Grid container>
-                <Grid item md={6}>
-                  <div className={classes.mainFeaturedPostContent}>
-                    <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                      Dedicate to being great.
-                    </Typography>
-                    <Typography variant="h5" color="inherit" paragraph>
-                      Here is a rich collection of various projects that capture the principals that dedication to
-                      <span style={{fontStyle: 'italic'}}> my</span> passion.
-                      Which is the never ending quest of continuous improvement.
-                    </Typography>
-                  </div>
+              <div className={"acari-heading"}>
+                <Grid container>
+                  <Grid item md={6}>
+                    <div className={classes.mainFeaturedPostContent}>
+                      <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                        Dedicate to being great.
+                      </Typography>
+                      <Typography variant="h5" color="inherit" paragraph>
+                        Here is a rich collection of various projects that capture the principals which are dedicated to
+                        <span style={{fontStyle: 'italic'}}> my</span> passion.
+                        Which is the never ending quest of continuous improvement.
+                      </Typography>
+                    </div>
+                  </Grid>
                 </Grid>
-              </Grid>
+              </div>
             </Paper>
             {/* End main featured post */}
             {/* Sub featured posts */}
