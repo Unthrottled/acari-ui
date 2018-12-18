@@ -90,9 +90,11 @@ const principles = [
   'Continuous Improvement',
   'Ownership',
   'Bias for Action',
+  'Focus',
   'Curiosity',
   'Open-mindedness',
   'Passion',
+  'Efficiency',
   'Stability',
 ];
 
