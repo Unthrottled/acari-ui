@@ -80,17 +80,14 @@ const styles = theme => ({
   },
 });
 
-const sections = [
-  'Technology',
-  'Design',
-  'Culture',
-  'Business',
-  'Politics',
-  'Opinion',
-  'Science',
-  'Health',
-  'Style',
-  'Travel',
+const principles = [
+  'Continuous Improvement',
+  'Ownership',
+  'Bias for Action',
+  'Curiosity',
+  'Open-mindedness',
+  'Passion',
+  'Stability',
 ];
 
 const featuredPosts = [
@@ -108,26 +105,7 @@ const featuredPosts = [
   },
 ];
 
-const posts = [post1,];
-
-const archives = [
-  'March 2020',
-  'February 2020',
-  'January 2020',
-  'December 2019',
-  'November 2019',
-  'October 2019',
-  'September 2019',
-  'August 2019',
-  'July 2019',
-  'June 2019',
-  'May 2019',
-  'April 2019',
-];
-
-const social = ['GitHub', 'Twitter', 'Facebook'];
-
-function Landing(props) {
+const Landing = props => {
   const {classes} = props;
 
   return (
@@ -153,13 +131,6 @@ function Landing(props) {
               Sign up
             </Button>
           </Toolbar>
-          <Toolbar variant="dense" className={classes.toolbarSecondary}>
-            {sections.map(section => (
-              <Typography color="inherit" noWrap key={section}>
-                {section}
-              </Typography>
-            ))}
-          </Toolbar>
           <main>
             {/* Main featured post */}
             <Paper className={classes.mainFeaturedPost}>
@@ -173,11 +144,17 @@ function Landing(props) {
                       <Typography variant="h5" color="inherit" paragraph>
                         Here is a rich collection of various projects that capture the principals which are dedicated to
                         <span style={{fontStyle: 'italic'}}> my</span> passion.
-                        Which is the never ending quest of continuous improvement.
                       </Typography>
                     </div>
                   </Grid>
                 </Grid>
+                <Toolbar variant="dense" className={classes.toolbarSecondary}>
+                  {principles.map(section => (
+                    <Typography color="inherit" noWrap key={section}>
+                      {section}
+                    </Typography>
+                  ))}
+                </Toolbar>
               </div>
             </Paper>
             {/* End main featured post */}
@@ -239,7 +216,7 @@ function Landing(props) {
       </div>
     </React.Fragment>
   );
-}
+};
 
 Landing.propTypes = {
   classes: PropTypes.object.isRequired,
