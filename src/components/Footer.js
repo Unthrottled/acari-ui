@@ -3,6 +3,7 @@ import Reach from "../images/reach.png";
 import React from "react";
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
+import Button from "@material-ui/core/Button";
 
 const styles = theme => ({
   footer: {
@@ -22,6 +23,11 @@ const Footer = props => {
 
   return <React.Fragment>
     <footer className={classes.footer}>
+      <div onClick={()=>window.open("https://github.com/cyclic-reference/acari-ui", '_blank')}>
+        <Button variant={"contained"} size="small" style={{marginLeft: '0.5em'}}>
+          Source Code
+        </Button>
+      </div>
       <Typography variant="h6" align="center" gutterBottom>
         Footer
       </Typography>
