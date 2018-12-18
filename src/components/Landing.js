@@ -14,7 +14,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
-import Project from '../Project';
 import Strype from '../images/stripe.png';
 import post1 from '../blog-post.1.md';
 import Reach from '../images/reach.png'
