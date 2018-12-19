@@ -16,6 +16,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import GridList from "@material-ui/core/es/GridList/GridList";
+import Button from "@material-ui/core/es/Button/Button";
 
 const styles = theme => ({
   card: {
@@ -61,22 +63,29 @@ class ProjectCard extends React.Component<Props> {
     return (
       <Card className={classes.card}>
         <CardContent>
-          <Typography gutterBottom variant="h4" component="h2">
-            {project.title}
-        </Typography>
-          <Typography component="p">
-            {project.exerpt}
-          </Typography>
+          <GridList>
+            <div>
+              <Typography gutterBottom variant="h4" component="h2">
+                {project.title}
+              </Typography>
+              <Typography component="p">
+                {project.exerpt}
+              </Typography>
+            </div>
+            <CardMedia
+              className={classes.media}
+              image={project.reach}
+              title={project.title}
+            />
+          </GridList>
         </CardContent>
-        <CardMedia
-          className={classes.media}
-          image={project.reach}
-          title={project.title}
-        />
         <CardActions className={classes.actions} disableActionSpacing>
           <IconButton aria-label="Share">
             <ShareIcon />
           </IconButton>
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
           <IconButton
             className={classnames(classes.expand, {
               [classes.expandOpen]: this.state.expanded,
