@@ -24,12 +24,6 @@ const Footer = props => {
 
   return <React.Fragment>
     <footer className={classes.footer}>
-      <Typography variant="h6" align="center" gutterBottom>
-        Footer
-      </Typography>
-      <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-        I apologise for nothing.
-      </Typography>
       <div style={{marginLeft: '1em'}}>
         <Typography variant="h6" gutterBottom>
           Alex Simons
@@ -44,6 +38,12 @@ const Footer = props => {
             Source Code
           </Button>
         </div>
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+          I apologise for nothing.
+        </Typography>
       </div>
     </footer>
     <div style={{textAlign: 'center'}}>
