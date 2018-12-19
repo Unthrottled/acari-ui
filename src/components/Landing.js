@@ -18,6 +18,7 @@ import Strype from '../images/stripe.png';
 import post1 from '../blog-post.1.md';
 import Reach from '../images/reach.png'
 import Footer from "./Footer";
+import JumboTron from "./JumboTron";
 
 const styles = theme => ({
   layout: {
@@ -47,23 +48,6 @@ const styles = theme => ({
       '1px 1px 0 rgba(101, 16, 16, 0.83)',
     flex: 1,
   },
-  toolbarSecondary: {
-    justifyContent: 'space-between',
-  },
-  mainFeaturedPost: {
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    marginBottom: theme.spacing.unit * 4,
-  },
-  mainFeaturedPostContent: {
-    padding: `${theme.spacing.unit * 6}px`,
-    [theme.breakpoints.up('md')]: {
-      paddingRight: 0,
-    },
-  },
-  mainGrid: {
-    marginTop: theme.spacing.unit * 3,
-  },
   card: {
     display: 'flex',
   },
@@ -84,18 +68,6 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3,
   },
 });
-
-const principles = [
-  'Continuous Improvement',
-  'Ownership',
-  'Bias for Action',
-  'Focus',
-  'Curiosity',
-  'Open-mindedness',
-  'Passion',
-  'Efficiency',
-  'Stability',
-];
 
 const featuredPosts = [
   {
@@ -141,32 +113,7 @@ const Landing = props => {
             </Button>
           </Toolbar>
           <main>
-            {/* Main featured post */}
-            <Paper className={classes.mainFeaturedPost}>
-              <div className={"acari-heading"}>
-                <Grid container>
-                  <Grid item md={6}>
-                    <div className={classes.mainFeaturedPostContent}>
-                      <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                        Dedicate to being great.
-                      </Typography>
-                      <Typography variant="h5" color="inherit" paragraph>
-                        Here is a rich collection of various projects that capture the principals which are dedicated to
-                        <span style={{fontStyle: 'italic'}}> my</span> passion.
-                      </Typography>
-                    </div>
-                  </Grid>
-                </Grid>
-                <Toolbar variant="dense" className={classes.toolbarSecondary}>
-                  {principles.map(section => (
-                    <Typography color="inherit" noWrap key={section}>
-                      {section}
-                    </Typography>
-                  ))}
-                </Toolbar>
-              </div>
-            </Paper>
-            {/* End main featured post */}
+            <JumboTron></JumboTron>
             {/* Sub featured posts */}
             <Grid container spacing={40} className={classes.cardGrid}>
               {featuredPosts.map(post => (
