@@ -60,16 +60,19 @@ class ProjectCard extends React.Component<Props> {
     const { classes, project } = this.props;
     return (
       <Card className={classes.card}>
+        <CardContent>
+          <Typography gutterBottom variant="h4" component="h2">
+            {project.title}
+        </Typography>
+          <Typography component="p">
+            {project.exerpt}
+          </Typography>
+        </CardContent>
         <CardMedia
           className={classes.media}
           image={project.reach}
           title={project.title}
         />
-        <CardContent>
-          <Typography component="p">
-            {project.exerpt}
-          </Typography>
-        </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
           <IconButton aria-label="Share">
             <ShareIcon />
