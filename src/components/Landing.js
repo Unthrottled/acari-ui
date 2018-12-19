@@ -19,6 +19,7 @@ import post1 from '../blog-post.1.md';
 import Reach from '../images/reach.png'
 import Footer from "./Footer";
 import JumboTron from "./JumboTron";
+import ProjectCard from "./ProjectCard";
 
 const styles = theme => ({
   layout: {
@@ -69,10 +70,31 @@ const styles = theme => ({
   },
 });
 
-const featuredPosts = [
+const featuredProjects = [
   {
     title: 'Featured post',
     date: 'Nov 12',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    reach: Reach
+  },
+  {
+    title: 'Post title',
+    date: 'Nov 11',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    reach: Reach
+  },
+  {
+    title: 'Post title',
+    date: 'Nov 11',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    reach: Reach
+  },
+  {
+    title: 'Post title',
+    date: 'Nov 11',
     description:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach
@@ -105,48 +127,16 @@ const Landing = props => {
             >
               Acari Cyberspace
             </Typography>
-            <IconButton>
-              <SearchIcon/>
-            </IconButton>
-            <Button variant="outlined" size="small">
-              Sign up
-            </Button>
           </Toolbar>
           <main>
             <JumboTron></JumboTron>
-            {/* Sub featured posts */}
             <Grid container spacing={40} className={classes.cardGrid}>
-              {featuredPosts.map(post => (
-                <Grid item key={post.title} xs={12} md={6}>
-                  <Card className={classes.card}>
-                    <div className={classes.cardDetails}>
-                      <CardContent>
-                        <Typography component="h2" variant="h5">
-                          {post.title}
-                        </Typography>
-                        <Typography variant="subtitle1" color="textSecondary">
-                          {post.date}
-                        </Typography>
-                        <Typography variant="subtitle1" paragraph>
-                          {post.description}
-                        </Typography>
-                        <Typography variant="subtitle1" color="primary">
-                          Continue reading...
-                        </Typography>
-                      </CardContent>
-                    </div>
-                    <Hidden xsDown>
-                      <CardMedia
-                        className={classes.cardMedia}
-                        image={post.reach}
-                        title="Image title"
-                      />
-                    </Hidden>
-                  </Card>
+              {featuredProjects.map(project => (
+                <Grid item key={project.title} xs={12} md={6}>
+                  <ProjectCard project={project}></ProjectCard>
                 </Grid>
               ))}
             </Grid>
-            {/* End sub featured posts */}
             <Grid container spacing={40} className={classes.mainGrid}>
               {/* Main content */}
               <Grid item xs={12} md={8}>
