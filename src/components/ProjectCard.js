@@ -44,7 +44,7 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500],
+      backgroundColor: red[50]
   },
 });
 
@@ -63,6 +63,9 @@ class ProjectCard extends React.Component<Props> {
     return (
       <Card className={classes.card}>
         <CardContent>
+          <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}>
+
+          </Avatar>
           <GridList>
             <div>
               <Typography gutterBottom variant="h4" component="h2">
