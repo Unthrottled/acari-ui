@@ -74,37 +74,42 @@ const featuredProjects = [
   {
     title: 'Featured post',
     date: 'Nov 12',
-    description:
+    exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    reach: Reach
+    reach: Reach,
+    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
     date: 'Nov 11',
-    description:
+    exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    reach: Reach
+    reach: Reach,
+    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
     date: 'Nov 11',
-    description:
+    exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    reach: Reach
+    reach: Reach,
+    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
     date: 'Nov 11',
-    description:
+    exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    reach: Reach
+    reach: Reach,
+    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
     date: 'Nov 11',
-    description:
+    exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    reach: Reach
+    reach: Reach,
+    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
 ];
 
