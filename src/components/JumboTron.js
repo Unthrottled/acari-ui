@@ -36,7 +36,6 @@ const principles = [
   'Focus',
   'Curiosity',
   'Open-mindedness',
-  'Passion',
   'Efficiency',
   'Stability',
 ];
