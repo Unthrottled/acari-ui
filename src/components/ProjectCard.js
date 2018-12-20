@@ -22,9 +22,6 @@ import Circuit from '../images/circuit.png';
 
 const styles = theme => ({
   card: {
-    background: `url(${Circuit}) white no-repeat`,
-    backgroundPosition: 'top right',
-    backgroundSize: '50% 50%',
     maxWidth: 550,
   },
   media: {
