@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -44,28 +44,32 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-      backgroundColor: red[50]
+    backgroundColor: red[50],
+    width: 60,
+    alignContent: 'center',
+    height: 60,
   },
 });
 
-interface Props {
+interface
+Props
+{
   project: Object
 }
+
 class ProjectCard extends React.Component<Props> {
-  state = { expanded: false };
+  state = {expanded: false};
 
   handleExpandClick = () => {
-    this.setState(state => ({ expanded: !state.expanded }));
+    this.setState(state => ({expanded: !state.expanded}));
   };
 
   render() {
-    const { classes, project } = this.props;
+    const {classes, project} = this.props;
     return (
       <Card className={classes.card}>
         <CardContent>
-          <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}>
-
-          </Avatar>
+          <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}/>
           <GridList>
             <div>
               <Typography gutterBottom variant="h4" component="h2">
@@ -84,7 +88,7 @@ class ProjectCard extends React.Component<Props> {
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
           <IconButton aria-label="Share">
-            <ShareIcon />
+            <ShareIcon/>
           </IconButton>
           <Button size="small" color="primary">
             Learn More
@@ -97,15 +101,15 @@ class ProjectCard extends React.Component<Props> {
             aria-expanded={this.state.expanded}
             aria-label="Show more"
           >
-            <ExpandMoreIcon />
+            <ExpandMoreIcon/>
           </IconButton>
         </CardActions>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <CardContent>
             {
-              project.descriptions.map(description =>(
+              project.descriptions.map(description => (
                 <Typography paragraph>{description}</Typography>
-              ) )
+              ))
             }
           </CardContent>
         </Collapse>
