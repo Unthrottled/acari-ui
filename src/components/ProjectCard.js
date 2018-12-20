@@ -19,13 +19,20 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import GridList from "@material-ui/core/es/GridList/GridList";
 import Button from "@material-ui/core/es/Button/Button";
 import Circuit from '../images/circuit.png';
+import GridListTile from "@material-ui/core/es/GridListTile/GridListTile";
 
 const styles = theme => ({
   card: {
     maxWidth: 550,
   },
   media: {
-    height: 0,
+    height: '100%',
+    width: '100%',
+    // marginTop: 30,
+    objectFit: 'contain'
+  },
+  cardContent: {
+    display: 'flex',
   },
   actions: {
     display: 'flex',
@@ -68,9 +75,9 @@ class ProjectCard extends React.Component<Props> {
     return (
       <Card className={classes.card}>
         <CardContent>
-          <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}/>
           <GridList>
             <div>
+              <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}/>
               <Typography gutterBottom variant="h4" component="h2">
                 {project.title}
               </Typography>
@@ -78,11 +85,14 @@ class ProjectCard extends React.Component<Props> {
                 {project.exerpt}
               </Typography>
             </div>
-            <CardMedia
-              className={classes.media}
-              image={project.displayImage}
-              title={project.title}
-            />
+            <GridListTile>
+              <CardMedia
+                className={classes.media}
+                image={project.displayImage}
+                title={project.title}
+              />
+
+            </GridListTile>
           </GridList>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
