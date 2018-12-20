@@ -18,14 +18,17 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import GridList from "@material-ui/core/es/GridList/GridList";
 import Button from "@material-ui/core/es/Button/Button";
+import Circuit from '../images/circuit.png';
 
 const styles = theme => ({
   card: {
+    background: `url(${Circuit}) white no-repeat`,
+    backgroundPosition: 'top right',
+    backgroundSize: '50% 50%',
     maxWidth: 550,
   },
   media: {
     height: 0,
-    paddingTop: '76.25%', // 16:9
   },
   actions: {
     display: 'flex',
@@ -46,7 +49,6 @@ const styles = theme => ({
   avatar: {
     backgroundColor: red[50],
     width: 60,
-    alignContent: 'center',
     height: 60,
   },
 });
@@ -81,7 +83,7 @@ class ProjectCard extends React.Component<Props> {
             </div>
             <CardMedia
               className={classes.media}
-              image={project.reach}
+              image={project.displayImage}
               title={project.title}
             />
           </GridList>

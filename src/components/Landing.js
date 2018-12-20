@@ -10,7 +10,8 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Strype from '../images/stripe.png';
 import post1 from '../blog-post.1.md';
-import Reach from '../images/reach.png'
+import Reach from '../images/reach.png';
+import Monika from '../images/just_monika.png';
 import Footer from "./Footer";
 import JumboTron from "./JumboTron";
 import ProjectCard from "./ProjectCard";
@@ -59,6 +60,7 @@ const featuredProjects = [
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
+    displayImage: Monika,
     descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
@@ -67,6 +69,7 @@ const featuredProjects = [
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
+    displayImage: Monika,
     descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
@@ -75,6 +78,7 @@ const featuredProjects = [
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
+    displayImage: Monika,
     descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
@@ -83,6 +87,7 @@ const featuredProjects = [
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
+    displayImage: Monika,
     descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
@@ -91,6 +96,7 @@ const featuredProjects = [
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
+    displayImage: Monika,
     descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
 ];
