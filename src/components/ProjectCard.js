@@ -13,14 +13,15 @@ import Typography from '@material-ui/core/Typography';
 import red from '@material-ui/core/colors/red';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import GridList from "@material-ui/core/es/GridList/GridList";
-import Button from "@material-ui/core/es/Button/Button";
+import GridList from '@material-ui/core/es/GridList/GridList';
+import Button from '@material-ui/core/es/Button/Button';
 import HexBottom from '../images/hex-bottom.png';
 
 const styles = theme => ({
   card: {
     maxWidth: 550,
-    backgroundColor: '',
+    backgroundColor: theme.palette.grey[700],
+    color: theme.palette.common.white,
     backgroundImage: `url(${HexBottom})`,
     backgroundPosition: 'left bottom',
     backgroundRepeat: 'repeat-x'
@@ -48,7 +49,7 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[50],
+    backgroundColor: red[500] + '20',
     width: 60,
     height: 60,
   },
@@ -68,17 +69,18 @@ class ProjectCard extends React.Component<Props> {
   };
 
   render() {
+    console.warn(red[50])
     const {classes, project} = this.props;
     return (
       <Card className={classes.card}>
         <CardContent>
           <GridList cellHeight={225}>
             <div>
-              <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}/>
-              <Typography gutterBottom variant="h4" component="h2">
+              <Avatar aria-label='Reach' className={classes.avatar} src={project.reach}/>
+              <Typography gutterBottom variant='h4' color='inherit' component='h2'>
                 {project.title}
               </Typography>
-              <Typography component="p">
+              <Typography component='p' color='inherit'>
                 {project.exerpt}
               </Typography>
             </div>
@@ -90,7 +92,7 @@ class ProjectCard extends React.Component<Props> {
           </GridList>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
-          <IconButton aria-label="Share">
+          <IconButton aria-label='Share' color={'inherit'}>
             <ShareIcon/>
           </IconButton>
           <IconButton
@@ -98,22 +100,23 @@ class ProjectCard extends React.Component<Props> {
               [classes.expandOpen]: this.state.expanded,
             })}
             onClick={this.handleExpandClick}
+            color={'inherit'}
             aria-expanded={this.state.expanded}
-            aria-label="Show more"
+            aria-label='Show more'
           >
             <ExpandMoreIcon/>
           </IconButton>
         </CardActions>
-        <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+        <Collapse in={this.state.expanded} timeout='auto' unmountOnExit>
           <CardContent>
             {
               project.descriptions.map(description => (
-                <Typography paragraph>{description}</Typography>
+                <Typography color={'inherit'} paragraph>{description}</Typography>
               ))
             }
           </CardContent>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button size='small' color='primary'>
               Learn More
             </Button>
           </CardActions>
