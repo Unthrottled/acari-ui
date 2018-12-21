@@ -59,7 +59,7 @@ const JumboTron = props => {
         </Grid>
         <Toolbar variant="dense" className={classes.toolbarSecondary}>
           {principles.map(section => (
-            <Typography color="inherit" noWrap key={section}>
+            <Typography color="inherit" noWrap key={section.length}>
               {section}
             </Typography>
           ))}
