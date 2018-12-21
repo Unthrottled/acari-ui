@@ -69,7 +69,6 @@ class ProjectCard extends React.Component<Props> {
   };
 
   render() {
-    console.warn(red[50])
     const {classes, project} = this.props;
     return (
       <Card className={classes.card}>
