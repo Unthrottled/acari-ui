@@ -24,12 +24,10 @@ import GridListTile from "@material-ui/core/es/GridListTile/GridListTile";
 const styles = theme => ({
   card: {
     maxWidth: 550,
+    backgroundColor: 'C9C9C9',
   },
   media: {
-    height: '100%',
-    width: '100%',
-    // marginTop: 30,
-    objectFit: 'contain'
+    backgroundSize: 'auto',
   },
   cardContent: {
     display: 'flex',
@@ -85,14 +83,11 @@ class ProjectCard extends React.Component<Props> {
                 {project.exerpt}
               </Typography>
             </div>
-            <GridListTile>
               <CardMedia
                 className={classes.media}
                 image={project.displayImage}
                 title={project.title}
               />
-
-            </GridListTile>
           </GridList>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
