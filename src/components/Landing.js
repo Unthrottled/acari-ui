@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Reach from '../images/reach.png';
@@ -11,11 +10,11 @@ import Monika from '../images/just_monika.png';
 import Footer from "./Footer";
 import JumboTron from "./JumboTron";
 import ProjectCard from "./ProjectCard";
+import AppBar from "@material-ui/core/es/AppBar/AppBar";
 
 const styles = theme => ({
   layout: {
     width: 'auto',
-    backgroundColor: 'rgba(255,255,255,0.15)',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
@@ -31,13 +30,17 @@ const styles = theme => ({
   toolbarMain: {
     borderBottom: `1px solid ${theme.palette.grey[300]}`,
   },
+  header: {
+    backgroundColor: theme.palette.grey[900] + 'AA',
+    marginBottom: '1em',
+  },
   toolbarTitle: {
     fontFamily: 'proto',
     color: 'ghostwhite',
-    textShadow: '-1px -1px 0 rgba(101, 16, 16, 0.95), ' +
-      '  1px -1px 0 rgba(101, 16, 16, 0.95), ' +
-      '-1px 1px 0 rgba(101, 16, 16, 0.95), ' +
-      '1px 1px 0 rgba(101, 16, 16, 0.83)',
+    textShadow: '-1px -1px 0 rgba(101, 16, 16, 1), ' +
+      '  1px -1px 0 rgba(101, 16, 16, 1), ' +
+      '-1px 1px 0 rgba(101, 16, 16, 1), ' +
+      '1px 1px 0 rgba(101, 16, 16, 1)',
     flex: 1,
   },
   sidebarAboutBox: {
@@ -57,7 +60,7 @@ const featuredProjects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
     displayImage: Monika,
-    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
@@ -66,7 +69,7 @@ const featuredProjects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
     displayImage: Monika,
-    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
@@ -75,7 +78,7 @@ const featuredProjects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
     displayImage: Monika,
-    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
@@ -84,7 +87,7 @@ const featuredProjects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
     displayImage: Monika,
-    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title',
@@ -93,19 +96,18 @@ const featuredProjects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: Reach,
     displayImage: Monika,
-    descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
 ];
 
 const Landing = props => {
   const {classes} = props;
-
   return (
     <React.Fragment>
       <CssBaseline/>
       <div className={"backdrop"}>
-        <div className={classes.layout}>
-          <Toolbar className={classes.toolbarMain}>
+        <AppBar position={"sticky"} className={classes.header}>
+          <Toolbar>
             <Typography
               component="h2"
               variant="h5"
@@ -117,6 +119,8 @@ const Landing = props => {
               Acari Cyberspace
             </Typography>
           </Toolbar>
+        </AppBar>
+        <div className={classes.layout}>
           <main>
             <JumboTron></JumboTron>
             <Grid container spacing={40} className={classes.cardGrid}>
