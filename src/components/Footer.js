@@ -30,11 +30,6 @@ const Footer = props => {
         <Typography variant="h6" gutterBottom>
           Alex Simons
         </Typography>
-        <Typography variant="h6" gutterBottom>
-          <a href="mailto:alexsimons9999@gmail.com">
-            alexsimons9999@gmail.com
-          </a>
-        </Typography>
         <div onClick={() => window.open("https://github.com/cyclic-reference/acari-ui", '_blank')}>
           <Button variant={"contained"} size="small">
             Source Code

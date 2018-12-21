@@ -11,7 +11,9 @@ import JumboTron from "./components/JumboTron";
 import ProjectCard from "./components/ProjectCard";
 import AppBar from "@material-ui/core/es/AppBar/AppBar";
 import Projects from './Projects';
-
+import Fab from "@material-ui/core/es/Fab/Fab";
+import EmailIcon from '@material-ui/icons/Email'
+import red from '@material-ui/core/colors/red'
 const styles = theme => ({
   layout: {
     width: 'auto',
@@ -50,6 +52,12 @@ const styles = theme => ({
   sidebarSection: {
     marginTop: theme.spacing.unit * 3,
   },
+  fab: {
+    backgroundColor: red[500],
+    position: 'fixed',
+    bottom: theme.spacing.unit * 2,
+    right: theme.spacing.unit * 2,
+  },
 });
 
 const App = props => {
@@ -85,6 +93,9 @@ const App = props => {
           </main>
         </div>
         <Footer></Footer>
+        <Fab href={'mailto:alexsimons9999@gmail.com?subject=Hey Alex! Cool Site, can we talk?'} size={"large"} color={"primary"} className={classes.fab}>
+          <EmailIcon></EmailIcon>
+        </Fab>
       </div>
     </React.Fragment>
   );
