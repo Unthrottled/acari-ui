@@ -15,13 +15,9 @@ import ProjectCard from "./ProjectCard";
 const styles = theme => ({
   layout: {
     width: 'auto',
-    backgroundColor: 'rgba(255,255,255,0.25)',
+    backgroundColor: 'rgba(255,255,255,0.15)',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
-    [theme.breakpoints.down('sm')]: {
-      marginLeft: 0,
-      marginRight: 0,
-    },
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
