@@ -7,8 +7,15 @@ import Grid from "@material-ui/core/Grid";
 import Toolbar from "@material-ui/core/Toolbar";
 
 const styles = theme => ({
-  toolbarSecondary: {
+  principles: {
     justifyContent: 'space-between',
+    display: 'flex',
+    flexWrap: 'wrap',
+    padding: '1em',
+  },
+  principle:{
+    paddingRight: '1em',
+    marginBottom: '0.5em'
   },
   mainFeaturedPost: {
     backgroundColor: theme.palette.grey[800],
@@ -57,13 +64,13 @@ const JumboTron = props => {
             </div>
           </Grid>
         </Grid>
-        <Toolbar variant="dense" className={classes.toolbarSecondary}>
-          {principles.map(section => (
-            <Typography color="inherit" noWrap key={section.length}>
-              {section}
-            </Typography>
+        <div variant="dense" className={classes.principles}>
+          {principles.map(principle => (
+            <div color="inherit" className={classes.principle} key={principle}>
+              &raquo; {principle}
+            </div>
           ))}
-        </Toolbar>
+        </div>
       </div>
     </Paper>
   </React.Fragment>;
