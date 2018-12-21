@@ -58,7 +58,7 @@ const featuredProjects = [
     title: 'Featured post',
     date: 'Nov 12',
     exerpt:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'This is a wider card with supporting text below as a natural lead-in to additional content.\nFiller text axdoehu xanoeux nthaoexu nchdtaoeu htdoaekuthdaoek uhatdo eku tdha kutdhaoek utgf.,kuga ,kutaghf,kutahgdo.uktgaf.,kup gtadf,.okudhia. kudtia.kuhdia,.ku gfa,kugtfadoekumdb;kjquak gthd; oetdhuk;thofeuikato;.duk;ogf.eiurcgfoiucgf;o.iuroe.picguixoet hudiakxoeth du aoedht ui;oethdu xotheduxkr.op;edijk raco;gf,.iuktnacg,.oxur;cgoexuktahdo; xuth;doxuarhd;o xkuth;doex jukrc;go idutcn;go xu;thdoe xurn;cogxuncg;.iunh;oejknahoexkaoecxk ar,no.duxano,.cgtudlogehukda,cg.dunthgqexk ns;o.dxula.,sg',
     reach: Reach,
     displayImage: Monika,
     descriptions: ["aoeuaoeu","aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],

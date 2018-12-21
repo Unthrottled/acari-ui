@@ -72,7 +72,7 @@ class ProjectCard extends React.Component<Props> {
     return (
       <Card className={classes.card}>
         <CardContent>
-          <GridList>
+          <GridList cellHeight={"auto"}>
             <div>
               <Avatar aria-label="Reach" className={classes.avatar} src={project.reach}/>
               <Typography gutterBottom variant="h4" component="h2">
