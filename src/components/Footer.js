@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import Fab from "@material-ui/core/es/Fab/Fab";
 import GitHub from "./Github";
 import LinkedIn from "./LinkedIn";
+import {Code} from "@material-ui/icons";
 
 const styles = theme => ({
   footer: {
@@ -22,6 +23,12 @@ const styles = theme => ({
       marginRight: 'auto',
     },
   },
+  social: {
+    justifyContent: 'space-evenly',
+  },
+  socialLink: {
+    marginRight: '0.5em',
+  },
 })
 
 const Footer = props => {
@@ -30,28 +37,26 @@ const Footer = props => {
   return <React.Fragment>
     <footer className={classes.footer}>
       <div style={{marginLeft: '1em'}}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6" gutterBottom align={'center'}>
           Alex Simons
         </Typography>
-        <div onClick={() => window.open("https://github.com/cyclic-reference/acari-ui", '_blank')}>
-          <Button variant={"contained"} size="small">
-            Source Code
-          </Button>
+        <div align="center" className={classes.social}>
+          <Fab className={classes.socialLink}
+            href={'https://github.com/cyclic-reference/acari-ui'}
+               target={'_blank'}>
+            <Code/>
+          </Fab>
+          <Fab className={classes.socialLink}
+            href={'https://github.com/cyclic-reference'}
+               target={'_blank'}>
+            <GitHub/>
+          </Fab>
+          <Fab className={classes.socialLink}
+            href={'https://www.linkedin.com/in/alex-simons-1a459610a/'}
+               target={'_blank'}>
+            <LinkedIn/>
+          </Fab>
         </div>
-        <Fab href={'https://github.com/cyclic-reference'}
-             target={'_blank'}>
-          <GitHub/>
-        </Fab>
-        <Fab href={'https://www.linkedin.com/in/alex-simons-1a459610a/'}
-             target={'_blank'}>
-          <LinkedIn/>
-        </Fab>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          I apologise for nothing.
-        </Typography>
       </div>
     </footer>
     <div style={{textAlign: 'center'}}>
