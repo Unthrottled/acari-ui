@@ -20,11 +20,15 @@ import GridList from "@material-ui/core/es/GridList/GridList";
 import Button from "@material-ui/core/es/Button/Button";
 import Circuit from '../images/circuit.png';
 import GridListTile from "@material-ui/core/es/GridListTile/GridListTile";
+import HexBottom from '../images/hex-bottom.png';
 
 const styles = theme => ({
   card: {
     maxWidth: 550,
-    backgroundColor: 'C9C9C9',
+    backgroundColor: '',
+    backgroundImage: `url(${HexBottom})`,
+    backgroundPosition: 'left bottom',
+    backgroundRepeat: 'repeat-x'
   },
   media: {
     backgroundSize: 'auto',
