@@ -19,7 +19,7 @@ import HexBottom from '../images/hex-bottom.png';
 
 const styles = theme => ({
   card: {
-    maxWidth: 550,
+    maxWidth: 1000,
     backgroundColor: theme.palette.grey[700],
     color: theme.palette.common.white,
     backgroundImage: `url(${HexBottom})`,
