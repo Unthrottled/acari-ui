@@ -4,7 +4,6 @@ import React from "react";
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 import Button from "@material-ui/core/Button";
-import Paper from "@material-ui/core/Paper";
 
 const styles = theme => ({
   footer: {
@@ -47,7 +46,7 @@ const Footer = props => {
       </div>
     </footer>
     <div style={{textAlign: 'center'}}>
-      <img src={Reach} className={classes.reach}></img>
+      <img alt={"Reach"} src={Reach} className={classes.reach}></img>
     </div>
   </React.Fragment>;
 }
