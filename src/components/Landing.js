@@ -131,11 +131,8 @@ const Landing = props => {
               ))}
             </Grid>
             <Grid container spacing={40} className={classes.mainGrid}>
-              {/* Main content */}
               <Grid item xs={12} md={8}>
               </Grid>
-              {/* End main content */}
-              {/* Sidebar */}
               <Grid item xs={12} md={4}>
                 <Paper elevation={0} className={classes.sidebarAboutBox}>
                   <Typography variant="h6" gutterBottom>

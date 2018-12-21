@@ -51,7 +51,7 @@ const JumboTron = props => {
                 Dedicate to being great.
               </Typography>
               <Typography variant="h5" color="inherit" paragraph>
-                Here is a rich collection of various projects that capture the principals which are dedicated to
+                Here is a rich collection of various projects that capture the principals that I dedicated to
                 <span style={{fontStyle: 'italic'}}> my</span> passion.
               </Typography>
             </div>
