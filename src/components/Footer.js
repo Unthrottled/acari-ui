@@ -10,7 +10,7 @@ import LinkedIn from "./LinkedIn";
 
 const styles = theme => ({
   footer: {
-    borderRadius: theme.spacing.unit/2,
+    borderRadius: theme.spacing.unit / 2,
     backgroundColor: 'rgba(255,255,255,0.15)',
     marginTop: theme.spacing.unit * 8,
     padding: `${theme.spacing.unit * 6}px 0`,
@@ -38,10 +38,12 @@ const Footer = props => {
             Source Code
           </Button>
         </div>
-        <Fab>
+        <Fab href={'https://github.com/cyclic-reference'}
+             target={'_blank'}>
           <GitHub/>
         </Fab>
-        <Fab>
+        <Fab href={'https://www.linkedin.com/in/alex-simons-1a459610a/'}
+             target={'_blank'}>
           <LinkedIn/>
         </Fab>
         <Typography variant="h6" align="center" gutterBottom>
