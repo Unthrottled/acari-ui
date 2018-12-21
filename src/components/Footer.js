@@ -6,6 +6,7 @@ import {withStyles} from '@material-ui/core/styles';
 import Button from "@material-ui/core/Button";
 import Fab from "@material-ui/core/es/Fab/Fab";
 import GitHub from "./Github";
+import LinkedIn from "./LinkedIn";
 
 const styles = theme => ({
   footer: {
@@ -39,6 +40,9 @@ const Footer = props => {
         </div>
         <Fab>
           <GitHub/>
+        </Fab>
+        <Fab>
+          <LinkedIn/>
         </Fab>
         <Typography variant="h6" align="center" gutterBottom>
           Footer
