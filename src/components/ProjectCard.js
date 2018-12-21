@@ -93,9 +93,6 @@ class ProjectCard extends React.Component<Props> {
           <IconButton aria-label="Share">
             <ShareIcon/>
           </IconButton>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
           <IconButton
             className={classnames(classes.expand, {
               [classes.expandOpen]: this.state.expanded,
@@ -115,6 +112,11 @@ class ProjectCard extends React.Component<Props> {
               ))
             }
           </CardContent>
+          <CardActions>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </CardActions>
         </Collapse>
       </Card>
     );
