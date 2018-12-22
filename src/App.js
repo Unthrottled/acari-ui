@@ -55,6 +55,7 @@ const styles = theme => ({
   },
   fab: {
     backgroundColor: red[500],
+    color: theme.palette.grey[100],
     position: 'fixed',
     bottom: theme.spacing.unit * 2,
     right: theme.spacing.unit * 2,
@@ -96,7 +97,6 @@ const App = props => {
         </div>
         <Fab href={'mailto:alexsimons9999@gmail.com?subject=Hey Alex! Cool Site, can we talk?'}
              size={"large"}
-             color={"primary"}
              className={classes.fab}>
           <EmailIcon></EmailIcon>
         </Fab>
