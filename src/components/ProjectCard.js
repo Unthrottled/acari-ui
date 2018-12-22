@@ -49,9 +49,9 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500] + '20',
-    width: 60,
-    height: 60,
+    width: 70,
+    padding: '0.3em',
+    height: 70,
   },
 });
 
@@ -74,8 +74,7 @@ class ProjectCard extends React.Component<Props> {
       <Card className={classes.card}>
         <CardContent>
           <GridList cellHeight={225}>
-            <div>
-              <Avatar aria-label='Reach' className={classes.avatar} src={project.reach}/>
+            <div style={{marginTop: '1em',}}>
               <Typography gutterBottom variant='h4' color='inherit' component='h2'>
                 {project.title}
               </Typography>
@@ -94,6 +93,15 @@ class ProjectCard extends React.Component<Props> {
           <IconButton aria-label='Share' color={'inherit'}>
             <ShareIcon/>
           </IconButton>
+          <div style={{width: '100%', display:'flex'}}>
+            <div style={{flexGrow: 0.5}}></div>
+            <Avatar  aria-label='Reach'
+                     className={classes.avatar}
+                     style={{
+                       backgroundColor: `${project.color}20`
+                     }}
+                     src={project.reach}/>
+          </div>
           <IconButton
             className={classnames(classes.expand, {
               [classes.expandOpen]: this.state.expanded,
