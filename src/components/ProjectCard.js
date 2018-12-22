@@ -27,7 +27,7 @@ const styles = theme => ({
     backgroundRepeat: 'repeat-x'
   },
   media: {
-    backgroundSize: 'auto',
+    backgroundSize: 'contain',
   },
   cardContent: {
     display: 'flex',

@@ -1,4 +1,5 @@
 import Reach from "./images/reach.png";
+import lambda from './images/lambda.svg';
 import reach_blue from "./images/reach_blue.png";
 import reach_green from "./images/reach_green.png";
 import reach_purple from "./images/reach_purple.png";
@@ -17,7 +18,7 @@ const projects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_purple,
     color: purple[500],
-    displayImage: Monika,
+    displayImage: lambda,
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
