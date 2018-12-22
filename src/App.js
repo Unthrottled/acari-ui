@@ -65,6 +65,9 @@ const styles = theme => ({
 
 const theme = createMuiTheme({
   palette: {
+    // primary:{
+    //
+    // },
     secondary: {
       main: orange[500],
     },
