@@ -14,7 +14,6 @@ import Projects from './Projects';
 import Fab from "@material-ui/core/es/Fab/Fab";
 import EmailIcon from '@material-ui/icons/Email'
 import red from '@material-ui/core/colors/red'
-import Paper from "@material-ui/core/es/Paper/Paper";
 
 const styles = theme => ({
   layout: {

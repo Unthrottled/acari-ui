@@ -3,17 +3,12 @@ import Reach from "../images/reach.png";
 import React from "react";
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
-import Button from "@material-ui/core/Button";
 import Fab from "@material-ui/core/es/Fab/Fab";
 import GitHub from "./Github";
 import LinkedIn from "./LinkedIn";
 import {Code} from "@material-ui/icons";
-import Paper from "@material-ui/core/es/Paper/Paper";
-import Grid from "@material-ui/core/es/Grid";
 import Card from "@material-ui/core/es/Card/Card";
 import CardContent from "@material-ui/core/es/CardContent/CardContent";
-import GridList from "@material-ui/core/es/GridList/GridList";
-import GridListTile from "@material-ui/core/es/GridListTile/GridListTile";
 import red from "@material-ui/core/es/colors/red";
 
 const styles = theme => ({
