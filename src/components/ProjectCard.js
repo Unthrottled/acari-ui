@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {withStyles, withTheme, createMuiTheme} from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -124,10 +124,9 @@ class ProjectCard extends React.Component<Props> {
     );
   }
 }
-const theme = createMuiTheme()
 
 ProjectCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(withTheme(theme)(ProjectCard));
+export default withStyles(styles)(ProjectCard);
