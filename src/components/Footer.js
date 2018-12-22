@@ -47,7 +47,7 @@ const Footer = props => {
   return <React.Fragment>
     <footer className={classes.footer}>
       <div align="center" style={{marginLeft: '1em',}}>
-        <div className={classes.aboutCard} xs={12} md={6} cellHeight={200}>
+        <div className={classes.aboutCard} xs={12} md={6}>
             <Card className={classes.card} elevation={0} >
               <CardContent>
                 <Typography variant="h6" gutterBottom>

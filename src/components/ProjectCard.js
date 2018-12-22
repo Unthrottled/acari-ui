@@ -110,7 +110,9 @@ class ProjectCard extends React.Component<Props> {
           <CardContent>
             {
               project.descriptions.map(description => (
-                <Typography color={'inherit'} paragraph>{description}</Typography>
+                <Typography key={new Date().getMilliseconds()}
+                            color={'inherit'}
+                            paragraph>{description}</Typography>
               ))
             }
           </CardContent>

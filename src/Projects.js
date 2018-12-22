@@ -12,7 +12,7 @@ const projects = [
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
-    title: 'Post title',
+    title: 'Post title 1',
     date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
@@ -21,7 +21,7 @@ const projects = [
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
-    title: 'Post title',
+    title: 'Post title 2',
     date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
@@ -30,7 +30,7 @@ const projects = [
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
-    title: 'Post title',
+    title: 'Post title 3',
     date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
@@ -39,7 +39,7 @@ const projects = [
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
-    title: 'Post title',
+    title: 'Post title 4',
     date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
