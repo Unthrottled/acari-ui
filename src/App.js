@@ -39,7 +39,6 @@ const styles = theme => ({
     marginBottom: '1em',
   },
   toolbarTitle: {
-    fontFamily: 'proto',
     color: 'ghostwhite',
     textShadow: '-1px -1px 0 rgba(101, 16, 16, 1), ' +
       '  1px -1px 0 rgba(101, 16, 16, 1), ' +
@@ -65,9 +64,6 @@ const styles = theme => ({
 
 const theme = createMuiTheme({
   palette: {
-    // primary:{
-    //
-    // },
     secondary: {
       main: orange[500],
     },
