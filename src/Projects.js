@@ -12,6 +12,7 @@ import red from "@material-ui/core/es/colors/red";
 import hystrix from './images/hystrix.png';
 import vertx from './images/Vert.x_Logo.svg'
 import pen from './images/pen.svg'
+import A from './images/A.svg';
 
 const projects = [
   {
@@ -61,7 +62,7 @@ const projects = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_red,
     color: red[500],
-    displayImage: Monika,
+    displayImage: A,
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
 ]
