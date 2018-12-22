@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {withStyles} from '@material-ui/core/styles';
+import {withStyles, withTheme, createMuiTheme} from '@material-ui/core/styles';
 import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -115,7 +115,7 @@ class ProjectCard extends React.Component<Props> {
             }
           </CardContent>
           <CardActions>
-            <Button size='small' color='primary'>
+            <Button variant={"contained"} size='medium' color='default'>
               Learn More
             </Button>
           </CardActions>
@@ -124,9 +124,10 @@ class ProjectCard extends React.Component<Props> {
     );
   }
 }
+const theme = createMuiTheme()
 
 ProjectCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProjectCard);
+export default withStyles(styles)(withTheme(theme)(ProjectCard));
