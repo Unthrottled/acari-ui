@@ -124,8 +124,12 @@ class ProjectCard extends React.Component<Props> {
             }
           </CardContent>
           <CardActions>
-            <Button variant={"contained"} size='medium' color='default'>
-              Learn More
+            <Button href={project.link}
+                    target={'_blank'}
+                    variant={"contained"}
+                    size='medium'
+                    color='default'>
+              {project.linkText}
             </Button>
           </CardActions>
         </Collapse>

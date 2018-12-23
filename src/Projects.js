@@ -14,53 +14,60 @@ import A from './images/A.svg';
 
 const projects = [
   {
-    title: 'Post title 2',
-    date: 'Nov 11',
-    exerpt:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    title: 'Functional Programming',
+    exerpt: 'Are you curious about functional programming? If so this is a great place to start your declarative journey!',
     reach: reach_purple,
     color: purple[500],
     displayImage: lambda,
-    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    link: 'http://learn.acari.io',
+    linkText: 'Visit the Site',
+    descriptions: [
+      'Sometimes words are not enough to convey a concept. However, they say that a picture is worth a thousand words.  So then just maybe words are satisfactory!',
+      'Anyways, this is a project that combines word and moving images to help explain functional and declarative programming paradigms as well as many other things!'
+    ],
   },
   {
     title: 'Featured post',
-    date: 'Nov 12',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_blue,
     color: blue[500],
     displayImage: hystrix,
+    link: 'https://acari.io',
+    linkText: 'Visit the site',
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title 1',
-    date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_green,
     color: green[500],
     displayImage: vertx,
+    link: 'https://acari.io',
+    linkText: 'Visit the site',
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title 3',
-    date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_purple,
     color: purple[500],
     displayImage: pen,
+    link: 'https://acari.io',
+    linkText: 'Visit the site',
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
   {
     title: 'Post title 4',
-    date: 'Nov 11',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_red,
     color: red[500],
     displayImage: A,
+    link: 'https://acari.io',
+    linkText: 'Visit the site',
     descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
   },
 ]
