@@ -58,35 +58,35 @@ class SocialShare extends React.Component {
                 <TwitterShareButton
                   title={project.shareTitle}
                   url={sharingUrl}>
-                  <TwitterIcon size={64}></TwitterIcon>
+                  <TwitterIcon size={48}></TwitterIcon>
                 </TwitterShareButton>
                 <LinkedinShareButton
                   title={project.shareTitle}
                   description={project.description}
                   url={sharingUrl}>
-                  <LinkedinIcon size={64}></LinkedinIcon>
+                  <LinkedinIcon size={48}></LinkedinIcon>
                 </LinkedinShareButton>
                 <FacebookShareButton
                   title={project.shareTitle}
                   quote={project.description}
                   url={sharingUrl}>
-                  <FacebookIcon size={64}></FacebookIcon>
+                  <FacebookIcon size={48}></FacebookIcon>
                 </FacebookShareButton>
                 <RedditShareButton
                   title={project.shareTitle}
                   url={sharingUrl}>
-                  <RedditIcon size={64}></RedditIcon>
+                  <RedditIcon size={48}></RedditIcon>
                 </RedditShareButton>
                 <EmailShareButton
                   subject={project.shareTitle}
                   body={project.description}
                   url={sharingUrl}>
-                  <EmailIcon size={64}></EmailIcon>
+                  <EmailIcon size={48}></EmailIcon>
                 </EmailShareButton>
                 <GooglePlusShareButton
                   title={project.shareTitle}
                   url={sharingUrl}>
-                  <GooglePlusIcon size={64}></GooglePlusIcon>
+                  <GooglePlusIcon size={48}></GooglePlusIcon>
                 </GooglePlusShareButton>
               </Paper>
             </Fade>

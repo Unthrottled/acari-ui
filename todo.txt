@@ -1,0 +1,7 @@
+- Share components
+    - Update all of the titles and descriptions and make sure that they work.
+    - Change the email title
+
+- Footer looks wonky on mobile
+
+- Doki Doki theme??
