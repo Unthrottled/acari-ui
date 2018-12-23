@@ -81,8 +81,7 @@ const projects = [
   },
   {
     title: 'Acari Cyberspace',
-    exerpt:
-      'If you are reading this, then you are already checking this project out. I needed a way to showcase all of the projects that spawn from learning about a new tool or framework. Thus, this project was conceived!',
+    exerpt:'I am always learning, whether it is about a new tool, framework, paradigm or something else exciting. ',
     reach: reach_red,
     color: red[500],
     displayImage: A,
@@ -92,6 +91,8 @@ const projects = [
       hideButton: true,
     },
     descriptions: [
+      'If you are reading this, then you are already checking this project out. ',
+      'I needed a way to showcase all of the projects that spawn from my explorations.',
       'Fun fact, all of my logos at the bottom of each project all lead to this site!',
     ],
   },
