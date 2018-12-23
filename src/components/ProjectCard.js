@@ -73,7 +73,7 @@ class ProjectCard extends React.Component<Props> {
     return (
       <Card className={classes.card}>
         <CardContent>
-          <GridList cellHeight={225}>
+          <GridList cellHeight={235}>
             <div style={{marginTop: '1em',}}>
               <Typography gutterBottom variant='h4' color='inherit' component='h2'>
                 {project.title}
