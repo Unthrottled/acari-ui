@@ -19,8 +19,10 @@ const projects = [
     reach: reach_purple,
     color: purple[500],
     displayImage: lambda,
-    link: 'http://learn.acari.io',
-    linkText: 'Visit the Site',
+    link: {
+      href: 'http://learn.acari.io',
+      linkText: 'Visit the Site',
+    },
     descriptions: [
       'Sometimes words are not enough to convey a concept. However, they say that a picture is worth a thousand words.  So then just maybe words are satisfactory!',
       'Anyways, this is a project that combines word and moving images to help explain functional and declarative programming paradigms as well as many other things!'
@@ -33,8 +35,10 @@ const projects = [
     reach: reach_blue,
     color: blue[500],
     displayImage: hystrix,
-    link: 'https://hystrix.acari.io',
-    linkText: 'Visit the Site',
+    link: {
+      href: 'https://hystrix.acari.io',
+      linkText: 'Visit the Site',
+    },
     descriptions: [
       'Much like the actual devices embedded into residential, commercial, and industrial structures.The latter is designed to prevent a massive surge of electricity from flowing through your circuits. While the former prevents your application from trying to execute commands that are going to fail or take a really long time to respond. It is better to fail fast respond with something, than to never respond at all!',
       "Both are employed to protect the user and in the end that is the part that counts.",
@@ -49,15 +53,14 @@ const projects = [
     reach: reach_green,
     color: green[500],
     displayImage: vertx,
-    link: 'https://wiki.acari.io',
-    linkText: 'Visit the Site',
+    link: {
+      href: 'https://wiki.acari.io',
+      linkText: 'Visit the Site',
+    },
     descriptions: [
       'This project was about utilizing the asyncronous event driven framework Vertx. It started life as the introduction project on the Vertx documentation page, but then evolved into a little bit more!',
       'The big plus about the asynchronous, event driven (reactive) paradigm, is that you need minimal threads to do any work. Just one thread can chug through the event loop and accomplish so much, without blocking. This works great in tandem with reactive supporting databases such as MongoDB. Meaning that more of the CPU is being utilized, and less threads an working memory has to be used.',
       'Which means that I can get away with a Micro EC2 instance!',
-
-
-
   ],
   },
   {
@@ -67,8 +70,10 @@ const projects = [
     reach: reach_purple,
     color: purple[500],
     displayImage: pen,
-    link: 'https://acari.io',
-    linkText: 'Visit the Blog',
+    link: {
+      href: 'http://blog.acari.io',
+      linkText: 'Visit the Blog',
+    },
     descriptions: [
       'Not only is this a knoweldge dump, it is also a continuous exercise in effective written communication. Words are really important, it is up to all of us to be able to communicate clearly with each other! It can be beyond frustrating to not be not able to convey your point. So this is part of the never ending effort to sharpen these skills.',
       'Also, I get to do a bit of programming as well. Which is the nice thing about using the Jekyll blog framework.'
@@ -81,8 +86,6 @@ const projects = [
     reach: reach_red,
     color: red[500],
     displayImage: A,
-    link: 'https://acari.io',
-    linkText: 'Visit the Site',
     descriptions: [
       'Fun fact, all of the Acari logos at the bottom of each project all lead to this site!',
     ],
