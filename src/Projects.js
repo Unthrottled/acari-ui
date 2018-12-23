@@ -86,8 +86,13 @@ const projects = [
     reach: reach_red,
     color: red[500],
     displayImage: A,
+    link: {
+      href: 'http://blog.acari.io',
+      linkText: 'Visit the Blog',
+      hideButton: true,
+    },
     descriptions: [
-      'Fun fact, all of the Acari logos at the bottom of each project all lead to this site!',
+      'Fun fact, all of my logos at the bottom of each project all lead to this site!',
     ],
   },
 ]

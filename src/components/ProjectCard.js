@@ -15,6 +15,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import GridList from '@material-ui/core/es/GridList/GridList';
 import Button from '@material-ui/core/es/Button/Button';
 import HexBottom from '../images/hex-bottom.png';
+import SocialShare from "./SocialShare";
 
 const styles = theme => ({
   card: {
@@ -89,9 +90,11 @@ class ProjectCard extends React.Component<Props> {
           </GridList>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
-          <IconButton aria-label='Share' color={'inherit'}>
-            <ShareIcon/>
-          </IconButton>
+          <SocialShare sharingUrl={project.link.href}>
+            <IconButton aria-label='Share' color={'inherit'}>
+              <ShareIcon/>
+            </IconButton>
+          </SocialShare>
           <div style={{width: '100%', display:'flex'}}>
             <div style={{flexGrow: 0.5}}></div>
             <Avatar  aria-label='Reach'
@@ -123,7 +126,7 @@ class ProjectCard extends React.Component<Props> {
               ))
             }
           </CardContent>
-          { project.link &&
+          { !project.link.hideButton &&
           (<CardActions>
             <Button href={project.link.href}
                     target={'_blank'}
