@@ -14,7 +14,7 @@ import A from './images/A.svg';
 
 const projects = [
   {
-    title: 'Functional Programming',
+    title: 'Learn Functional Programming',
     exerpt: 'Are you curious about functional programming? If so this is a great place to start your declarative journey!',
     reach: reach_purple,
     color: purple[500],

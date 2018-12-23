@@ -56,35 +56,35 @@ class SocialShare extends React.Component {
             <Fade {...TransitionProps} timeout={350}>
               <Paper style={{display: 'flex', cursor: 'pointer'}} onClick={()=>this.setState({open: false})}>
                 <TwitterShareButton
-                  title={project.shareTitle}
+                  title={project.title + '. ' + project.exerpt}
                   url={sharingUrl}>
                   <TwitterIcon size={48}></TwitterIcon>
                 </TwitterShareButton>
                 <LinkedinShareButton
-                  title={project.shareTitle}
-                  description={project.description}
+                  title={project.title}
+                  description={project.exerpt}
                   url={sharingUrl}>
                   <LinkedinIcon size={48}></LinkedinIcon>
                 </LinkedinShareButton>
                 <FacebookShareButton
-                  title={project.shareTitle}
-                  quote={project.description}
+                  title={project.title}
+                  quote={project.exerpt}
                   url={sharingUrl}>
                   <FacebookIcon size={48}></FacebookIcon>
                 </FacebookShareButton>
                 <RedditShareButton
-                  title={project.shareTitle}
+                  title={project.title}
                   url={sharingUrl}>
                   <RedditIcon size={48}></RedditIcon>
                 </RedditShareButton>
                 <EmailShareButton
-                  subject={project.shareTitle}
-                  body={project.description}
+                  subject={project.title}
+                  body={project.exerpt}
                   url={sharingUrl}>
                   <EmailIcon size={48}></EmailIcon>
                 </EmailShareButton>
                 <GooglePlusShareButton
-                  title={project.shareTitle}
+                  title={project.title}
                   url={sharingUrl}>
                   <GooglePlusIcon size={48}></GooglePlusIcon>
                 </GooglePlusShareButton>
