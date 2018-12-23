@@ -55,7 +55,7 @@ const Footer = props => {
                 </Typography>
                 <Typography>
                   Everybody probably has a ton of words that they would choose to describe themselves and I am no different.
-                  However if I had to choose one that would be: <strong>Driven</strong>
+                  However if I had to choose one, that one would be: <strong>Driven</strong>
                 </Typography><br/>
                 <Typography>
                   Since you are reading this, chances are I sent you here.
