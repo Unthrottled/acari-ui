@@ -15,8 +15,6 @@ const styles = theme => ({
   footer: {
     borderRadius: theme.spacing.unit ,
     marginTop: theme.spacing.unit * 8,
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
@@ -54,11 +52,12 @@ const Footer = props => {
                   What is Alex Simons like?
                 </Typography>
                 <Typography>
-                  Everybody probably has a ton of words that they would choose to describe themselves and I am no different.
-                  However if I had to choose one, that one would be: <strong>Driven</strong>
+                  I have a ton of words that I would choose to describe myself .
+                  However if I had to choose only one, that one would be: <strong>Driven</strong>.
+                  I am driven to reach my full potential and use every day to get closer to that goal.
                 </Typography><br/>
                 <Typography>
-                  Since you are reading this, chances are I sent you here.
+                  Since you are reading this, chances, are I sent you here.
                   If you happened to stumble across this site then, "Hi! Nice to meet you!"
                 </Typography> <br/>
                 <Typography>

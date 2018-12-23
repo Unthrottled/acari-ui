@@ -103,7 +103,6 @@ const App = props => {
                 ))}
               </Grid>
             </main>
-            <Footer></Footer>
           </div>
           <Fab href={'mailto:alexsimons9999@gmail.com?subject=Hey, Alex! Do you have time to talk?'}
                size={"large"}
@@ -111,6 +110,7 @@ const App = props => {
                className={classes.fab}>
             <EmailIcon></EmailIcon>
           </Fab>
+          <Footer></Footer>
         </div>
       </MuiThemeProvider>
     </React.Fragment>
