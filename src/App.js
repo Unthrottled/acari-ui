@@ -107,6 +107,7 @@ const App = props => {
           </div>
           <Fab href={'mailto:alexsimons9999@gmail.com?subject=Hey Alex! Cool Site, can we talk?'}
                size={"large"}
+               title={'You like sending emails, don\'t you?'}
                className={classes.fab}>
             <EmailIcon></EmailIcon>
           </Fab>

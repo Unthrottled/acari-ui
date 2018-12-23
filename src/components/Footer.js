@@ -51,25 +51,35 @@ const Footer = props => {
             <Card className={classes.card} elevation={0} >
               <CardContent>
                 <Typography variant="h6" gutterBottom>
-                  About
+                  What is Alex Simons like?
                 </Typography>
                 <Typography>
-                  Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit
-                  amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                  Everybody probably has a ton of words that they would choose to describe themselves and I am no different.
+                  However if I had to choose one that would be: <strong>Driven</strong>
+                </Typography><br/>
+                <Typography>
+                  Since you are reading this, chances are I sent you here.
+                  If you happened to stumble across this site then, "Hi! Nice to meet you!"
+                </Typography> <br/>
+                <Typography>
+                  Feel free to say "Hey!" or visit my social sites below.
                 </Typography>
               </CardContent>
               <div align="center" className={classes.social}>
                 <Fab className={classes.socialLink}
+                     title={"Acari Cyberspace's Source Code"}
                      href={'https://github.com/cyclic-reference/acari-ui'}
                      target={'_blank'}>
                   <Code/>
                 </Fab>
                 <Fab className={classes.socialLink}
+                     title={"Alex's GitHub Profile"}
                      href={'https://github.com/cyclic-reference'}
                      target={'_blank'}>
                   <GitHub/>
                 </Fab>
                 <Fab className={classes.socialLink}
+                     title={"Alex's Linkedin"}
                      href={'https://www.linkedin.com/in/alex-simons-1a459610a/'}
                      target={'_blank'}>
                   <LinkedIn/>
