@@ -77,13 +77,15 @@ const projects = [
   {
     title: 'Acari Cyberspace',
     exerpt:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'If you are reading this, then you are already checking this project out. I needed a way to showcase all of the projects that spawn from learning about a new tool or framework. Thus, this project was conceived!',
     reach: reach_red,
     color: red[500],
     displayImage: A,
     link: 'https://acari.io',
     linkText: 'Visit the Site',
-    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: [
+      'Fun fact, all of the Acari logos at the bottom of each project all lead to this site!',
+    ],
   },
 ]
 
