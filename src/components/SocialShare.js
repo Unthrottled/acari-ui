@@ -42,7 +42,7 @@ class SocialShare extends React.Component {
   };
 
   render() {
-    const { classes, children, sharingUrl } = this.props;
+    const { classes, children, sharingUrl, project } = this.props;
     const { anchorEl, open } = this.state;
     const id = open ? 'simple-popper' : null;
 
@@ -54,23 +54,38 @@ class SocialShare extends React.Component {
         <Popper id={id} open={open} anchorEl={anchorEl} transition>
           {({ TransitionProps }) => (
             <Fade {...TransitionProps} timeout={350}>
-              <Paper style={{display: 'flex'}}>
-                <RedditShareButton url={sharingUrl}>
+              <Paper style={{display: 'flex'}} onClick={()=>this.setState({open: false})}>
+                <RedditShareButton
+                  title={project.shareTitle}
+                  url={sharingUrl}>
                   <RedditIcon size={64}></RedditIcon>
                 </RedditShareButton>
-                <EmailShareButton url={sharingUrl}>
+                <EmailShareButton
+                  subject={project.shareTitle}
+                  body={project.description}
+                  url={sharingUrl}>
                   <EmailIcon size={64}></EmailIcon>
                 </EmailShareButton>
-                <TwitterShareButton url={sharingUrl}>
+                <TwitterShareButton
+                  title={project.shareTitle}
+                  url={sharingUrl}>
                   <TwitterIcon size={64}></TwitterIcon>
                 </TwitterShareButton>
-                <FacebookShareButton url={sharingUrl}>
+                <FacebookShareButton
+                  title={project.shareTitle}
+                  quote={project.description}
+                  url={sharingUrl}>
                   <FacebookIcon size={64}></FacebookIcon>
                 </FacebookShareButton>
-                <LinkedinShareButton url={sharingUrl}>
+                <LinkedinShareButton
+                  title={project.shareTitle}
+                  description={project.description}
+                  url={sharingUrl}>
                   <LinkedinIcon size={64}></LinkedinIcon>
                 </LinkedinShareButton>
-                <GooglePlusShareButton url={sharingUrl}>
+                <GooglePlusShareButton
+                  title={project.shareTitle}
+                  url={sharingUrl}>
                   <GooglePlusIcon size={64}></GooglePlusIcon>
                 </GooglePlusShareButton>
               </Paper>

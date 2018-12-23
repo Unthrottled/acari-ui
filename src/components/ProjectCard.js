@@ -90,7 +90,7 @@ class ProjectCard extends React.Component<Props> {
           </GridList>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
-          <SocialShare sharingUrl={project.link.href}>
+          <SocialShare sharingUrl={project.link.href} project={project}>
             <IconButton aria-label='Share' color={'inherit'}>
               <ShareIcon/>
             </IconButton>
