@@ -61,18 +61,21 @@ const projects = [
   ],
   },
   {
-    title: 'Post title 3',
+    title: 'Acari Blog',
     exerpt:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'There are a lot of problems that exist and cannot be solved by a simple google search alone. Which can be annoying at times! I mean someone somewhere has to have had the same problem as I have, right?',
     reach: reach_purple,
     color: purple[500],
     displayImage: pen,
     link: 'https://acari.io',
-    linkText: 'Visit the Site',
-    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    linkText: 'Visit the Blog',
+    descriptions: [
+      'Not only is this a knoweldge dump, it is also a continuous exercise in effective written communication. Words are really important, it is up to all of us to be able to communicate clearly with each other! It can be beyond frustrating to not be not able to convey your point. So this is part of the never ending effort to sharpen these skills.',
+      'Also, I get to do a bit of programming as well. Which is the nice thing about using the Jekyll blog framework.'
+    ],
   },
   {
-    title: 'Post title 4',
+    title: 'Acari Cyberspace',
     exerpt:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     reach: reach_red,
