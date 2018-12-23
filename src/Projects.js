@@ -27,15 +27,20 @@ const projects = [
     ],
   },
   {
-    title: 'Featured post',
+    title: 'Resilient Applications',
     exerpt:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'Applications today need to be able to respond in the face of adverse conditions. The circuit breaker pattern is a great place to start.',
     reach: reach_blue,
     color: blue[500],
     displayImage: hystrix,
-    link: 'https://acari.io',
+    link: 'https://hystrix.acari.io',
     linkText: 'Visit the site',
-    descriptions: ["aoeuaoeu", "aoeuaoeuaoeuauoeuaoetsuhsaoetu hsato ehsaot e", "aosetuh lacoebu satoeuhs aoeunsstah satoenshu "],
+    descriptions: [
+      'Much like the actual devices embedded into residential, commercial, and industrial structures.The latter is designed to prevent a massive surge of electricity from flowing through your circuits. While the former prevents your application from trying to execute commands that are going to fail or take a really long time to respond. It is better to fail fast respond with something, than to never respond at all!',
+      "Both are employed to protect the user and in the end that is the part that counts.",
+      "This project was designed to highlight a portion of Hystrix's (Netflix's circuit breaker) features. It makes use of the real time metric analysis  that is fed to the dashboard. The data is generated (successfully or unsuccessfully) by a constant stream of command invocations controlled by you!",
+      "Lastly, it took me way too long to realize that the Hystrix mascot is a porcupine.",
+    ],
   },
   {
     title: 'Post title 1',
