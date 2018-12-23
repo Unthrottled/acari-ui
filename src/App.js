@@ -105,7 +105,7 @@ const App = props => {
             </main>
             <Footer></Footer>
           </div>
-          <Fab href={'mailto:alexsimons9999@gmail.com?subject=Hey Alex! Cool Site, can we talk?'}
+          <Fab href={'mailto:alexsimons9999@gmail.com?subject=Hey, Alex! Do you have time to talk?'}
                size={"large"}
                title={'You like sending emails, don\'t you?'}
                className={classes.fab}>
