@@ -10,6 +10,7 @@ import {Code, Dashboard} from "@material-ui/icons";
 import Card from "@material-ui/core/es/Card/Card";
 import CardContent from "@material-ui/core/es/CardContent/CardContent";
 import red from "@material-ui/core/es/colors/red";
+import Trello from "./Trello";
 
 const styles = theme => ({
   footer: {
@@ -83,7 +84,7 @@ const Footer = props => {
                      title={"Alex's Kanban"}
                      href={'https://trello.com/b/JUPDhYNk/how-to-spend-free-time'}
                      target={'_blank'}>
-                  <Dashboard/>
+                  <Trello/>
                 </Fab>
                 <Fab className={classes.socialLink}
                      title={"Alex's Linkedin"}
