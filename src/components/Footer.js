@@ -6,7 +6,7 @@ import {withStyles} from '@material-ui/core/styles';
 import Fab from "@material-ui/core/es/Fab/Fab";
 import GitHub from "./Github";
 import LinkedIn from "./LinkedIn";
-import {Code, Dashboard} from "@material-ui/icons";
+import {Code} from "@material-ui/icons";
 import Card from "@material-ui/core/es/Card/Card";
 import CardContent from "@material-ui/core/es/CardContent/CardContent";
 import red from "@material-ui/core/es/colors/red";
