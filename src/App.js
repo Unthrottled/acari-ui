@@ -35,15 +35,11 @@ const styles = theme => ({
     borderBottom: `1px solid ${theme.palette.grey[300]}`,
   },
   header: {
-    backgroundColor: theme.palette.grey[900] + 'AA',
+    backgroundColor: '#E0E0E0',
     marginBottom: '1em',
   },
   toolbarTitle: {
-    color: 'ghostwhite',
-    textShadow: '-1px -1px 0 rgba(101, 16, 16, 1), ' +
-      '  1px -1px 0 rgba(101, 16, 16, 1), ' +
-      '-1px 1px 0 rgba(101, 16, 16, 1), ' +
-      '1px 1px 0 rgba(101, 16, 16, 1)',
+    color: theme.palette.grey[900],
     flex: 1,
   },
   sidebarAboutBox: {
@@ -88,7 +84,7 @@ const App = props => {
                 noWrap
                 className={classes.toolbarTitle}
               >
-                Acari Cyberspace
+                &#10218;  Acari Cyberspace &#10219;
               </Typography>
             </Toolbar>
           </AppBar>

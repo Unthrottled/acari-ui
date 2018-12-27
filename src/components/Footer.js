@@ -34,8 +34,8 @@ const styles = theme => ({
     color: theme.palette.grey[100],
   },
   card: {
-    color: theme.palette.grey[100],
-    backgroundColor: 'rgba(55,55,55,0.45)',
+    color: theme.palette.grey[200],
+    backgroundColor: 'rgba(55,55,55,0.75)',
   },
   aboutCard: {
     maxWidth: 400,

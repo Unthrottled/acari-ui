@@ -95,7 +95,7 @@ class ProjectCard extends React.Component {
             <Avatar  aria-label='Reach'
                      className={classes.avatar}
                      style={{
-                       backgroundColor: `${project.color}20`
+                       backgroundColor: `${project.color}35`
                      }}
                      src={project.reach}/>
           </div>
