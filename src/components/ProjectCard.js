@@ -20,8 +20,8 @@ import SocialShare from "./SocialShare";
 const styles = theme => ({
   card: {
     maxWidth: 1000,
-    backgroundColor: theme.palette.grey[700],
-    color: theme.palette.common.white,
+    backgroundColor: theme.palette.grey[400],
+    color: theme.palette.grey[800],
     backgroundImage: `url(${HexBottom})`,
     backgroundPosition: 'left bottom',
     backgroundRepeat: 'repeat-x',

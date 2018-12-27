@@ -34,7 +34,8 @@ const styles = theme => ({
     color: theme.palette.grey[100],
   },
   card: {
-    backgroundColor: 'rgba(255,255,255,0.45)',
+    color: theme.palette.grey[100],
+    backgroundColor: 'rgba(55,55,55,0.45)',
   },
   aboutCard: {
     maxWidth: 400,
@@ -51,19 +52,19 @@ const Footer = props => {
         <div className={classes.aboutCard} xs={12} md={6}>
             <Card className={classes.card} elevation={0} >
               <CardContent>
-                <Typography variant="h6" gutterBottom>
+                <Typography color={'inherit'} variant="h6" gutterBottom>
                   What is Alex Simons like?
                 </Typography>
-                <Typography>
+                <Typography color={'inherit'}>
                   I have a ton of words that I would choose to describe myself .
                   However if I had to choose only one, that one would be: <strong>Driven</strong>.
                   I am driven to reach my full potential and use every day to get closer to that goal.
                 </Typography><br/>
-                <Typography>
+                <Typography color={'inherit'}>
                   Since you are reading this, chances, are I sent you here.
                   If you happened to stumble across this site then, "Hi! Nice to meet you!"
                 </Typography> <br/>
-                <Typography>
+                <Typography color={'inherit'}>
                   Feel free to say "Hey!" or visit my social sites below.
                 </Typography>
               </CardContent>
