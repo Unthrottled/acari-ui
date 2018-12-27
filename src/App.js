@@ -97,7 +97,7 @@ const App = props => {
               <JumboTron></JumboTron>
               <Grid container spacing={40} className={classes.cardGrid}>
                 {Projects.map(project => (
-                  <Grid item key={project.title} xs={12} md={6} lg={2}>
+                  <Grid item key={project.title} xs={12} md={6}>
                     <ProjectCard project={project}></ProjectCard>
                   </Grid>
                 ))}

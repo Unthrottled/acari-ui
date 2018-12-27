@@ -55,13 +55,7 @@ const styles = theme => ({
   },
 });
 
-interface
-Props
-{
-  project: Object
-}
-
-class ProjectCard extends React.Component<Props> {
+class ProjectCard extends React.Component {
   state = {expanded: false};
 
   handleExpandClick = () => {
