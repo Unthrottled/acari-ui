@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,11 +56,11 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:zoom="0.28209838"
-     inkscape:cx="770.6347"
+     inkscape:zoom="0.84849903"
+     inkscape:cx="504.87129"
      inkscape:cy="1481.4267"
      inkscape:window-x="67"
-     inkscape:window-y="27"
+     inkscape:window-y="334"
      inkscape:current-layer="layer1"
      width="3000px"
      height="2000px"
@@ -101,7 +101,7 @@
      style="display:inline"
      transform="translate(287.282,248.81187)">
     <path
-       style="font-style:normal;font-weight:normal;font-size:2050.27807617px;font-family:'Times New Roman';opacity:0.98000004;fill:#8477c9;fill-opacity:1;stroke:#cccae0;stroke-width:10.51306657;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05130666, 1.05130666000000006;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       style="font-style:normal;font-weight:normal;font-size:2050.27807617px;font-family:'Times New Roman';opacity:0.98000004;fill:#8477c9;fill-opacity:1;stroke:#151515;stroke-width:10.51306657;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05130666,1.05130666;stroke-dashoffset:0;stroke-opacity:0.57647061;paint-order:stroke fill markers"
        d="m 949.53603,673.55768 h 36.04 c 0,105.4508 -17.1867,182.2026 -51.5573,230.2559 -34.3724,48.0534 -77.2533,72.08 -128.6429,72.08 -42.0475,0 -82.4256,-15.8509 -121.1346,-47.5528 -38.7103,-31.7018 -73.4155,-116.6294 -104.1157,-254.7831 L 494.02993,285.1261 195.69843,961.87808 H 6.4882353 L 434.96423,38.852456 c -22.6923,-119.46503 -50.056,-207.896516 -82.0912,-265.294756 -32.0359,-57.39586 -71.7467,-86.09438 -119.1323,-86.09566 -38.0425,10e-4 -71.246,14.51739 -99.6107,43.54839 -28.36499,29.03346 -44.215895,73.91662 -47.552895,134.6496 h -36.04 c 2.0022,-98.10781 21.6907,-176.69505 59.065605,-235.76196 37.37469,-59.06424 84.09329,-88.59702 140.15579,-88.59844 36.0397,0.001 70.2443,14.85124 102.614,44.5495 32.3689,29.70101 60.4,80.42398 84.0934,152.16908 23.6925,71.74754 60.5668,220.412556 110.6229,445.99554 l 71.079,317.35263 c 28.6979,131.4798 58.8981,219.4107 90.6007,263.7931 31.7011,44.3829 69.5765,66.5742 113.6262,66.574 74.7488,2e-4 117.1292,-52.725 127.1413,-158.1758 z"
        id="path7"
        inkscape:connector-curvature="0" />

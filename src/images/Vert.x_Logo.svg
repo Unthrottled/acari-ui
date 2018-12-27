@@ -22,7 +22,7 @@
    inkscape:version="0.92.3 (unknown)"><metadata
    id="metadata23"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs21" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -32,7 +32,7 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="853"
+   inkscape:window-width="863"
    inkscape:window-height="491"
    id="namedview19"
    showgrid="false"
@@ -55,20 +55,20 @@
    d="m 37.6,131.5 c 0,-9.9 -8.1,-18 -18,-18 -9.9,0 -18,8.1 -18,18 0,9.9 8.1,18 18,18 9.9,0 18,-8.1 18,-18"
    id="path10"
    inkscape:connector-curvature="0"
-   style="fill:#37a537;fill-opacity:1;stroke:#f1f1f1;stroke-opacity:0.57731958" />
+   style="fill:#37a537;fill-opacity:1;stroke:#151515;stroke-opacity:0.57647061;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none" />
 <g
    id="g16"
    transform="translate(-420.4,-71.5)"
-   style="fill:#37a537;fill-opacity:1;stroke:#f1f1f1;stroke-opacity:0.57647059">
+   style="fill:#37a537;fill-opacity:1;stroke:#151515;stroke-opacity:0.57647061;stroke-linejoin:round;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none">
 	<path
    d="m 577.4,72 h -6.2 -17 L 526.7,109.8 499.1,72 h -17 -6.4 -17 c 12.1,16 33.6,46.8 47.8,66.3 l -37,50.9 c 2,4.2 3.1,8.9 3.1,13.8 0,0.3 0,0.7 0,1 h 3.2 6.4 16.8 L 594.2,72 Z"
    id="path12"
    inkscape:connector-curvature="0"
-   style="fill:#37a537;fill-opacity:1;stroke:#f1f1f1;stroke-opacity:0.57647059" />
+   style="fill:#37a537;fill-opacity:1;stroke:#151515;stroke-opacity:0.57647061;stroke-linejoin:round;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none" />
 	<path
    d="m 557.7,153.5 -20.1,27.9 16.5,22.6 h 17 6.2 17 c -9.6,-13.7 -24,-33.3 -36.6,-50.5 z"
    id="path14"
    inkscape:connector-curvature="0"
-   style="fill:#37a537;fill-opacity:1;stroke:#f1f1f1;stroke-opacity:0.57647059" />
+   style="fill:#37a537;fill-opacity:1;stroke:#151515;stroke-opacity:0.57647061;stroke-linejoin:round;stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none" />
 </g>
 </svg>
