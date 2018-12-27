@@ -24,9 +24,10 @@ const styles = theme => ({
     color: theme.palette.common.white,
     backgroundImage: `url(${HexBottom})`,
     backgroundPosition: 'left bottom',
-    backgroundRepeat: 'repeat-x'
+    backgroundRepeat: 'repeat-x',
   },
   media: {
+    minHeight: 150,
     backgroundSize: 'contain',
   },
   cardContent: {
@@ -67,12 +68,12 @@ class ProjectCard extends React.Component {
     return (
       <Card className={classes.card}>
         <CardContent>
-          <GridList cellHeight={235}>
-            <div style={{marginTop: '1em',}}>
-              <Typography gutterBottom variant='h4' color='inherit' component='h2'>
-                {project.title}
-              </Typography>
-              <Typography component='p' color='inherit'>
+          <Typography gutterBottom variant='h4' color='inherit' component='h2'>
+            {project.title}
+          </Typography>
+          <GridList cellHeight={'auto'}>
+            <div>
+              <Typography aria-multiline={true} component='p' color='inherit'>
                 {project.exerpt}
               </Typography>
             </div>
