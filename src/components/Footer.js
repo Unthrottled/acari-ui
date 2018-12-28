@@ -42,7 +42,6 @@ const styles = theme => ({
   },
   aboutCard: {
     maxWidth: 400,
-    padding: `${theme.spacing.unit * 3}px 0`
   },
 });
 
@@ -74,7 +73,7 @@ const Footer = props => {
 
   return <React.Fragment>
     <footer className={classes.footer}>
-      <div align="center" style={{marginLeft: '1em',}}>
+      <div align="center">
         <div className={classes.aboutCard} xs={12} md={6}>
           <Card className={classes.card} elevation={0}>
             <CardContent>
