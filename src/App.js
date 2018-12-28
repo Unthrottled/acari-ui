@@ -90,7 +90,7 @@ const App = props => {
           </AppBar>
           <div className={classes.layout}>
             <main>
-              <JumboTron></JumboTron>
+              <JumboTron/>
               <Grid container spacing={40}>
                 {Projects.map(project => (
                   <Grid item key={project.title} xs={12} md={6}>
@@ -104,9 +104,9 @@ const App = props => {
                size={"large"}
                title={'You like sending emails, don\'t you?'}
                className={classes.fab}>
-            <EmailIcon></EmailIcon>
+            <EmailIcon/>
           </Fab>
-          <Footer></Footer>
+          <Footer/>
         </div>
       </MuiThemeProvider>
     </React.Fragment>
