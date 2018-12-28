@@ -20,13 +20,14 @@ import SocialShare from "./SocialShare";
 const styles = theme => ({
   card: {
     maxWidth: 1000,
-    backgroundColor: theme.palette.grey[700],
-    color: theme.palette.common.white,
+    backgroundColor: theme.palette.grey[400],
+    color: theme.palette.grey[800],
     backgroundImage: `url(${HexBottom})`,
     backgroundPosition: 'left bottom',
-    backgroundRepeat: 'repeat-x'
+    backgroundRepeat: 'repeat-x',
   },
   media: {
+    minHeight: 150,
     backgroundSize: 'contain',
   },
   cardContent: {
@@ -67,12 +68,12 @@ class ProjectCard extends React.Component {
     return (
       <Card className={classes.card}>
         <CardContent>
-          <GridList cellHeight={235}>
-            <div style={{marginTop: '1em',}}>
-              <Typography gutterBottom variant='h4' color='inherit' component='h2'>
-                {project.title}
-              </Typography>
-              <Typography component='p' color='inherit'>
+          <Typography gutterBottom variant='h4' color='inherit' component='h2'>
+            {project.title}
+          </Typography>
+          <GridList cellHeight={'auto'}>
+            <div>
+              <Typography aria-multiline={true} component='p' color='inherit'>
                 {project.exerpt}
               </Typography>
             </div>
@@ -94,7 +95,7 @@ class ProjectCard extends React.Component {
             <Avatar  aria-label='Reach'
                      className={classes.avatar}
                      style={{
-                       backgroundColor: `${project.color}20`
+                       backgroundColor: `${project.color}35`
                      }}
                      src={project.reach}/>
           </div>

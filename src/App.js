@@ -35,15 +35,11 @@ const styles = theme => ({
     borderBottom: `1px solid ${theme.palette.grey[300]}`,
   },
   header: {
-    backgroundColor: theme.palette.grey[900] + 'AA',
+    backgroundColor: '#E0E0E0',
     marginBottom: '1em',
   },
   toolbarTitle: {
-    color: 'ghostwhite',
-    textShadow: '-1px -1px 0 rgba(101, 16, 16, 1), ' +
-      '  1px -1px 0 rgba(101, 16, 16, 1), ' +
-      '-1px 1px 0 rgba(101, 16, 16, 1), ' +
-      '1px 1px 0 rgba(101, 16, 16, 1)',
+    color: theme.palette.grey[900],
     flex: 1,
   },
   sidebarAboutBox: {
@@ -88,14 +84,14 @@ const App = props => {
                 noWrap
                 className={classes.toolbarTitle}
               >
-                Acari Cyberspace
+                &#10218;  Acari Cyberspace &#10219;
               </Typography>
             </Toolbar>
           </AppBar>
           <div className={classes.layout}>
             <main>
-              <JumboTron></JumboTron>
-              <Grid container spacing={40} className={classes.cardGrid}>
+              <JumboTron/>
+              <Grid container spacing={40}>
                 {Projects.map(project => (
                   <Grid item key={project.title} xs={12} md={6}>
                     <ProjectCard project={project}></ProjectCard>
@@ -108,9 +104,9 @@ const App = props => {
                size={"large"}
                title={'You like sending emails, don\'t you?'}
                className={classes.fab}>
-            <EmailIcon></EmailIcon>
+            <EmailIcon/>
           </Fab>
-          <Footer></Footer>
+          <Footer/>
         </div>
       </MuiThemeProvider>
     </React.Fragment>
