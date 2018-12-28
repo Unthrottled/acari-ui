@@ -116,6 +116,11 @@ const Footer = props => {
            src={Reach}
            className={classes.reach}/>
     </div>
+    <div style={{paddingLeft: '1em', color: '#EAEAEA', opacity: 0.25}}>
+      <Typography color={"inherit"}>
+        v1.1.0
+      </Typography>
+    </div>
   </React.Fragment>;
 }
 
