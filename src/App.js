@@ -91,7 +91,7 @@ const App = props => {
           <div className={classes.layout}>
             <main>
               <JumboTron></JumboTron>
-              <Grid container spacing={40} className={classes.cardGrid}>
+              <Grid container spacing={40}>
                 {Projects.map(project => (
                   <Grid item key={project.title} xs={12} md={6}>
                     <ProjectCard project={project}></ProjectCard>

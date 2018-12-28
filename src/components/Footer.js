@@ -11,10 +11,12 @@ import Card from "@material-ui/core/es/Card/Card";
 import CardContent from "@material-ui/core/es/CardContent/CardContent";
 import red from "@material-ui/core/es/colors/red";
 import Trello from "./Trello";
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
 
 const styles = theme => ({
   footer: {
-    borderRadius: theme.spacing.unit ,
+    borderRadius: theme.spacing.unit,
     marginTop: theme.spacing.unit * 8,
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
@@ -25,6 +27,7 @@ const styles = theme => ({
     },
   },
   social: {
+    padding: '0.25em',
     justifyContent: 'space-evenly',
     marginBottom: theme.spacing.unit * 3,
   },
@@ -41,7 +44,30 @@ const styles = theme => ({
     maxWidth: 400,
     padding: `${theme.spacing.unit * 3}px 0`
   },
-})
+});
+
+const socialLinks = [
+  {
+    title: "Acari Cyberspace's Source Code",
+    link: 'https://github.com/cyclic-reference/acari-ui',
+    icon: (<Code/>),
+  },
+  {
+    title: "Alex's GitHub Profile",
+    link: 'https://github.com/cyclic-reference',
+    icon: (<GitHub/>),
+  },
+  {
+    title: "Alex's Kanban",
+    link: 'https://trello.com/b/JUPDhYNk/how-to-spend-free-time',
+    icon: (<Trello/>),
+  },
+  {
+    title: "Alex's Linkedin",
+    link: 'https://www.linkedin.com/in/alex-simons-1a459610a/',
+    icon: (<LinkedIn/>),
+  },
+];
 
 const Footer = props => {
   const {classes} = props;
@@ -50,58 +76,46 @@ const Footer = props => {
     <footer className={classes.footer}>
       <div align="center" style={{marginLeft: '1em',}}>
         <div className={classes.aboutCard} xs={12} md={6}>
-            <Card className={classes.card} elevation={0} >
-              <CardContent>
-                <Typography color={'inherit'} variant="h6" gutterBottom>
-                  What is Alex Simons like?
-                </Typography>
-                <Typography color={'inherit'}>
-                  I have a ton of words that I would choose to describe myself .
-                  However if I had to choose only one, that one would be: <strong>Driven</strong>.
-                  I am driven to reach my full potential and use every day to get closer to that goal.
-                </Typography><br/>
-                <Typography color={'inherit'}>
-                  Since you are reading this, chances, are I sent you here.
-                  If you happened to stumble across this site then, "Hi! Nice to meet you!"
-                </Typography> <br/>
-                <Typography color={'inherit'}>
-                  Feel free to say "Hey!" or visit my social sites below.
-                </Typography>
-              </CardContent>
-              <div align="center" className={classes.social}>
-                <Fab className={classes.socialLink}
-                     title={"Acari Cyberspace's Source Code"}
-                     href={'https://github.com/cyclic-reference/acari-ui'}
-                     target={'_blank'}>
-                  <Code/>
-                </Fab>
-                <Fab className={classes.socialLink}
-                     title={"Alex's GitHub Profile"}
-                     href={'https://github.com/cyclic-reference'}
-                     target={'_blank'}>
-                  <GitHub/>
-                </Fab>
-                <Fab className={classes.socialLink}
-                     title={"Alex's Kanban"}
-                     href={'https://trello.com/b/JUPDhYNk/how-to-spend-free-time'}
-                     target={'_blank'}>
-                  <Trello/>
-                </Fab>
-                <Fab className={classes.socialLink}
-                     title={"Alex's Linkedin"}
-                     href={'https://www.linkedin.com/in/alex-simons-1a459610a/'}
-                     target={'_blank'}>
-                  <LinkedIn/>
-                </Fab>
-              </div>
-            </Card>
+          <Card className={classes.card} elevation={0}>
+            <CardContent>
+              <Typography color={'inherit'} variant="h6" gutterBottom>
+                What is Alex Simons like?
+              </Typography>
+              <Typography color={'inherit'}>
+                I have a ton of words that I would choose to describe myself .
+                However if I had to choose only one, that one would be: <strong>Driven</strong>.
+                I am driven to reach my full potential and use every day to get closer to that goal.
+              </Typography><br/>
+              <Typography color={'inherit'}>
+                Since you are reading this, chances, are I sent you here.
+                If you happened to stumble across this site then, "Hi! Nice to meet you!"
+              </Typography> <br/>
+              <Typography color={'inherit'}>
+                Feel free to say "Hey!" or visit my social sites below.
+              </Typography>
+            </CardContent>
+            <div align="center" className={classes.social}>
+              <GridList cellHeight={64} className={classes.gridList} cols={4}>
+                {socialLinks.map(socialLink => (
+                  <GridListTile key={socialLink.title} cols={1}>
+                    <Fab className={classes.socialLink}
+                         title={socialLink.title}
+                         href={socialLink.link}
+                         target={'_blank'}>
+                      {socialLink.icon}
+                    </Fab>
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </Card>
         </div>
       </div>
     </footer>
     <div style={{textAlign: 'center'}}>
       <img alt={"Reach"}
            src={Reach}
-           className={classes.reach}></img>
+           className={classes.reach}/>
     </div>
   </React.Fragment>;
 }
