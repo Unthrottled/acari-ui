@@ -50,9 +50,8 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    width: 70,
-    padding: '0.3em',
-    height: 70,
+    width: 80,
+    height: 80,
   },
 });
 
@@ -94,9 +93,7 @@ class ProjectCard extends React.Component {
             <div style={{flexGrow: 0.5}}/>
             <Avatar  aria-label='Reach'
                      className={classes.avatar}
-                     style={{
-                       backgroundColor: `${project.color}35`
-                     }}
+
                      sizes={'100%'}
                      src={project.reach}/>
           </div>
