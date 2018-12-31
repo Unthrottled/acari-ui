@@ -91,12 +91,13 @@ class ProjectCard extends React.Component {
             </IconButton>
           </SocialShare>
           <div style={{width: '100%', display:'flex'}}>
-            <div style={{flexGrow: 0.5}}></div>
+            <div style={{flexGrow: 0.5}}/>
             <Avatar  aria-label='Reach'
                      className={classes.avatar}
                      style={{
                        backgroundColor: `${project.color}35`
                      }}
+                     sizes={'100%'}
                      src={project.reach}/>
           </div>
           <IconButton
