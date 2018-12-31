@@ -64,7 +64,6 @@ class ProjectCard extends React.Component {
 
   render() {
     const {classes, project} = this.props;
-    let index=0;
     return (
       <Card className={classes.card}>
         <CardContent>
@@ -113,8 +112,8 @@ class ProjectCard extends React.Component {
         <Collapse in={this.state.expanded} timeout='auto' unmountOnExit>
           <CardContent>
             {
-              project.descriptions.map(description => (
-                <Typography key={++index}
+              project.descriptions.map((description, index) => (
+                <Typography key={index}
                             color={'inherit'}
                             paragraph>{description}</Typography>
               ))
