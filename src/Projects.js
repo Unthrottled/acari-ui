@@ -2,7 +2,7 @@ import lambda from './images/lambda.svg';
 import reach_blue from "./images/reach_blue.svg";
 import reach_green from "./images/reach_green.svg";
 import reach_purple from "./images/reach_purple.svg";
-import reach_red from "./images/reach_red.png";
+import reach_red from "./images/reach_red.svg";
 import purple from "@material-ui/core/es/colors/purple";
 import blue from "@material-ui/core/es/colors/blue";
 import green from "@material-ui/core/es/colors/green";
