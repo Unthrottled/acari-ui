@@ -64,6 +64,7 @@ class ProjectCard extends React.Component {
 
   render() {
     const {classes, project} = this.props;
+    let index=0;
     return (
       <Card className={classes.card}>
         <CardContent>
@@ -113,7 +114,7 @@ class ProjectCard extends React.Component {
           <CardContent>
             {
               project.descriptions.map(description => (
-                <Typography key={new Date().getMilliseconds()}
+                <Typography key={++index}
                             color={'inherit'}
                             paragraph>{description}</Typography>
               ))
