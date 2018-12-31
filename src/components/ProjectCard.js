@@ -50,9 +50,8 @@ const styles = theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    width: 70,
-    padding: '0.3em',
-    height: 70,
+    width: 80,
+    height: 80,
   },
 });
 
@@ -91,12 +90,11 @@ class ProjectCard extends React.Component {
             </IconButton>
           </SocialShare>
           <div style={{width: '100%', display:'flex'}}>
-            <div style={{flexGrow: 0.5}}></div>
+            <div style={{flexGrow: 0.5}}/>
             <Avatar  aria-label='Reach'
                      className={classes.avatar}
-                     style={{
-                       backgroundColor: `${project.color}35`
-                     }}
+
+                     sizes={'100%'}
                      src={project.reach}/>
           </div>
           <IconButton
@@ -114,8 +112,8 @@ class ProjectCard extends React.Component {
         <Collapse in={this.state.expanded} timeout='auto' unmountOnExit>
           <CardContent>
             {
-              project.descriptions.map(description => (
-                <Typography key={new Date().getMilliseconds()}
+              project.descriptions.map((description, index) => (
+                <Typography key={index}
                             color={'inherit'}
                             paragraph>{description}</Typography>
               ))
