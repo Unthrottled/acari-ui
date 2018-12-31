@@ -41,6 +41,9 @@ const styles = theme => ({
     color: theme.palette.grey[200],
     backgroundColor: 'rgba(55,55,55,0.75)',
   },
+  link: {
+    color: theme.palette.grey[200],
+  },
   aboutCard: {
     maxWidth: 400,
   },
@@ -85,6 +88,7 @@ const Footer = props => {
                 I have a ton of words that I would choose to describe myself .
                 However if I had to choose only one, that one would be: <strong>Driven</strong>.
                 I am driven to reach my full potential and use every day to get closer to that goal.
+                If you want to read more about me please see <a className={classes.link} target={'_blank'} href={'https://blog.acari.io/about/index.html'}>this post.</a>
               </Typography><br/>
               <Typography color={'inherit'}>
                 Since you are reading this, chances, are I sent you here.
