@@ -1,5 +1,5 @@
 import Typography from "@material-ui/core/es/Typography/Typography";
-import Reach from "../images/reach.png";
+import Reach from "../images/reach_red.svg";
 import React from "react";
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
@@ -13,6 +13,7 @@ import red from "@material-ui/core/es/colors/red";
 import Trello from "./Trello";
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import ReactSVG from "react-svg";
 
 const styles = theme => ({
   footer: {
@@ -39,6 +40,9 @@ const styles = theme => ({
   card: {
     color: theme.palette.grey[200],
     backgroundColor: 'rgba(55,55,55,0.75)',
+  },
+  link: {
+    color: theme.palette.grey[200],
   },
   aboutCard: {
     maxWidth: 400,
@@ -84,6 +88,7 @@ const Footer = props => {
                 I have a ton of words that I would choose to describe myself .
                 However if I had to choose only one, that one would be: <strong>Driven</strong>.
                 I am driven to reach my full potential and use every day to get closer to that goal.
+                If you want to read more about me please see <a className={classes.link} target={'_blank'} href={'https://blog.acari.io/about/index.html'}>this post.</a>
               </Typography><br/>
               <Typography color={'inherit'}>
                 Since you are reading this, chances, are I sent you here.
@@ -112,13 +117,12 @@ const Footer = props => {
       </div>
     </footer>
     <div style={{textAlign: 'center'}}>
-      <img alt={"Reach"}
-           src={Reach}
-           className={classes.reach}/>
+        <ReactSVG svgStyle={{width:'100%', height:"100%"}}
+                  src={Reach}/>
     </div>
     <div style={{paddingLeft: '1em', color: '#EAEAEA', opacity: 0.25}}>
       <Typography color={"inherit"}>
-        v1.1.0
+        v1.2.0
       </Typography>
     </div>
   </React.Fragment>;
