@@ -115,14 +115,14 @@ const Footer = props => {
           </Card>
         </div>
       </div>
-    </footer>
-    <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center'}}>
         <ReactSVG svgStyle={{width:'100%', height:"100%"}}
                   src={Reach}/>
-    </div>
+      </div>
+    </footer>
     <div style={{paddingLeft: '1em', color: '#EAEAEA', opacity: 0.25}}>
       <Typography color={"inherit"}>
-        v1.2.0
+        v1.2.1
       </Typography>
     </div>
   </React.Fragment>;
