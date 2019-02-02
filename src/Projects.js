@@ -2,6 +2,7 @@ import lambda from './images/lambda.svg';
 import reach_blue from "./images/reach_blue.svg";
 import reach_green from "./images/reach_green.svg";
 import reach_purple from "./images/reach_purple.svg";
+import reach_orange from "./images/reach_orange.svg";
 import reach_red from "./images/reach_red.svg";
 import purple from "@material-ui/core/es/colors/purple";
 import blue from "@material-ui/core/es/colors/blue";
@@ -10,6 +11,7 @@ import red from "@material-ui/core/es/colors/red";
 import hystrix from './images/hystrix.png';
 import vertx from './images/Vert.x_Logo.svg'
 import pen from './images/pen.svg'
+import cloud from './images/cloud.svg'
 import A from './images/A.svg';
 
 const projects = [
@@ -26,6 +28,23 @@ const projects = [
     descriptions: [
       'Sometimes words are not enough to convey a concept. However, they say that a picture is worth a thousand words.  So then just maybe words are satisfactory!',
       'Anyways, this is a project that combines word and moving images to help explain functional and declarative programming paradigms as well as many other things!'
+    ],
+  },
+  {
+    title: 'The Frugal AWS Dev',
+    exerpt:
+      'Everybody likes to save money where they can, right? Learn how to go to production on a budget!',
+    reach: reach_orange,
+    color: purple[500],
+    displayImage: cloud,
+    link: {
+      href: 'http://frugal-aws.acari.io',
+      linkText: 'Learn how to Save!',
+    },
+    descriptions: [
+      'I think that it is important that we should be able to share all of the cool things that we know how to do.',
+      'However, sharing can sometimes be hard, and not knowing what to do could become costly. In both time and money',
+      'If you are ready to start your journey to making production systems on a budget, look no further.'
     ],
   },
   {
@@ -76,7 +95,7 @@ const projects = [
     },
     descriptions: [
       'Which can be annoying at times! I mean someone somewhere has to have had the same problem as I have, right?',
-      'Not only is this a knoweldge dump, it is also a continuous exercise in effective written communication. Words are really important, it is up to all of us to be able to communicate clearly with each other! It can be beyond frustrating to not be not able to convey your point. So this is part of the never ending effort to sharpen these skills.',
+      'Not only is this a knowledge dump, it is also a continuous exercise in effective written communication. Words are really important, it is up to all of us to be able to communicate clearly with each other! It can be beyond frustrating to not be not able to convey your point. So this is part of the never ending effort to sharpen these skills.',
       'Also, I get to do a bit of programming as well. Which is the nice thing about using the Jekyll blog framework.'
     ],
   },
